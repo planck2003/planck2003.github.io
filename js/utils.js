@@ -1342,13 +1342,16 @@ class ProgressiveLoad {
     this.container = document.createElement('div');
     this.smallStage = document.createElement('div');
     this.largeStage = document.createElement('div');
+    this.video = document.createElement('div');
     this.smallImg = new Image();
     this.largeImg = new Image();
     this.container.className = 'pl-container';
     this.smallStage.className = 'pl-img pl-blur';
     this.largeStage.className = 'pl-img';
+    this.video.className = 'pl-video';
     this.container.appendChild(this.smallStage);
     this.container.appendChild(this.largeStage);
+    this.container.appendChild(this.video);
     this.smallImg.onload = this._onSmallLoaded.bind(this);
     this.largeImg.onload = this._onLargeLoaded.bind(this);
   }
