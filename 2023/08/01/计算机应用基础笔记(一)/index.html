@@ -1,0 +1,1220 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>计算机应用基础笔记（一） | 吮指原味姬</title><meta name="keywords" content="笔记,计算机"><meta name="author" content="新奥尔良姬翅"><meta name="copyright" content="新奥尔良姬翅"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="计算机应用基础笔记（一）"><meta name="application-name" content="计算机应用基础笔记（一）"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="计算机应用基础笔记（一）"><meta property="og:url" content="http://example.com/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/index.html"><meta property="og:site_name" content="吮指原味姬"><meta property="og:description" content="计算机应用基础笔记留存"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb2d535bebc.webp"><meta property="article:author" content="新奥尔良姬翅"><meta property="article:tag" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb2d535bebc.webp"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://example.com/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.14/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":"https://friends.anheyu.com/"},
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":90,"position":"top","messagePrev":"该内容距离上次更新已经过了","messageNext":"天，文章内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#fec4d9","bgDark":"#00c4b6","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机应用基础笔记（一）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-08-06 21:18:13',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://img01.anheyu.com/useruploads/243/2023/08/01/64c8b3dea71a8.ico"/><div class="loading-image-dot"></div><div id="loading-percentage">0%</div></div></div><script>if (GLOBAL_CONFIG.preloader.source == "2" || GLOBAL_CONFIG.preloader.source == "3") {
+  const loadingPercentage = document.getElementById("loading-percentage");
+  let loadingPercentageTimer = setInterval(function() {
+    var progressBar = document.querySelector(".pace-progress");
+    if (!progressBar) return
+    var currentValue = progressBar.getAttribute("data-progress-text");
+    if (currentValue !== loadingPercentage.textContent) {
+      loadingPercentage.textContent = currentValue;
+      if (currentValue === "100%") {
+        clearInterval(loadingPercentageTimer);
+      }
+    }
+  }, 100);
+}
+
+const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div id="web_box"><div id="web_container"><div id="menu-mask"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://hpage.yejinblok2.top/" title="个人主页" target="_blank"><img class="back-menu-item-icon" src="https://img01.anheyu.com/useruploads/243/2023/08/01/64c8b3dea71a8.ico" alt="个人主页"/><span class="back-menu-item-text">个人主页</span></a><a class="back-menu-item" href="https://blog.anheyu.com/" title="个人博客" target="_blank"><img class="back-menu-item-icon" src="https://img01.anheyu.com/useruploads/243/2023/08/01/64c8b3dea71a8.ico" alt="个人博客"/><span class="back-menu-item-text">个人博客</span></a><a class="back-menu-item" href="https://blog.anheyu.com/" title="副站" target="_blank"><img class="back-menu-item-icon" src="https://img01.anheyu.com/useruploads/243/2023/07/28/64c319e853f6d.jpg" alt="副站"/><span class="back-menu-item-text">副站</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" href="https://image.anheyu.com/" title="安知鱼图床" target="_blank"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">吮指原味姬</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-127px;"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=8589095176&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e828c.jpg" target="_blank"><img class="post-qr-code-img" alt="wechat" src="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e828c.jpg"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e5ac9.jpg" target="_blank"><img class="post-qr-code-img" alt="alipay" src="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e5ac9.jpg"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> <span>最新评论</span></span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/hexo/" style="font-size: 1.05rem;">hexo<sup>4</sup></a><a href="/tags/live2d/" style="font-size: 1.05rem;">live2d<sup>1</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" style="font-size: 1.05rem;">博客搭建<sup>1</sup></a><a href="/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/" style="font-size: 1.05rem;">日常生活<sup>1</sup></a><a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.05rem;">笔记<sup>2</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 1.05rem;">计算机<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/08/"><span class="card-archive-list-date">八月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="anzhiyu.switchDarkMode()" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>笔记</span></a><a class="article-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" tabindex="-1"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>计算机</span></a></span></div></div><h1 class="post-title">计算机应用基础笔记（一）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-01T09:22:40.000Z" title="发表于 2023-08-01 17:22:40">2023-08-01</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-06T13:18:13.724Z" title="更新于 2023-08-06 21:18:13">2023-08-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为苏州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>苏州</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb2d535bebc.webp"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="note info flat"><p><strong>本文是博主在备考时整理的一些笔记，内容若存在错误，可在评论区指正，非常感谢！＜（＾－＾）＞</strong></p>
+<p>系列笔记导航🚌🚌</p>
+<ol>
+<li>🧬<a target="_blank" rel="noopener" href="https://www.yjtblok.top/posts/0.html">计算机应用基础笔记（一）</a></li>
+<li>🎣<a target="_blank" rel="noopener" href="https://www.yjtblok.top/posts/61467062.html">计算机应用基础笔记（二）</a></li>
+</ol>
+</div>
+
+
+<span class='p center h2'>开始学习前，先来听猫猫唱歌吧！🎶</span>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=96 src="//music.163.com/outchain/player?type=2&id=2066307948&auto=1&height=66"></iframe>
+
+<h1 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h1><h2 id="计算机基本信息"><a href="#计算机基本信息" class="headerlink" title="计算机基本信息"></a>计算机基本信息</h2><ol>
+<li><p>现代计算机硬件组成：CPU，内存，外存，输入&#x2F;输出设备。通过总线相连<br> 主机：cpu+内存+总线<br> 外围设备：输入设备+输出设备+外存储器</p>
+</li>
+<li><p>磁卡，条形码，IC卡的扫描器&#x2F;阅读器为输入设备（用于输入文字符号）</p>
+ <wavy>硬盘，U盘，光盘不是输入设备，它们都是外部存储设备</wavy> 
+<p> 不论输入设备的信息原始形态如何，输入到计算机的信息都用<code>二进位</code>表示。<br> 输出设备将计算机中的二进位信息转换成人可识别的形式（文字，图形，符号等）</p>
+</li>
+<li><p>现代计算机一般包含有多个（微）处理器，<code>CPU</code>是用与执行系统软件和应用软件的处理器<br> 但CPU是处理器，’处理器却不一定是CPU’</p>
+</li>
+<li><p>存储器:<br> 功能：储存以二进制形式表示的<code>程序</code>和<code>数据</code><br> 存储器分类：<code>CPU能否直接访问</code></p>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">内存</th>
+<th align="center">外存</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">存取速度</td>
+<td align="center">很快</td>
+<td align="center">较慢</td>
+</tr>
+<tr>
+<td align="center">存储容量</td>
+<td align="center">较小</td>
+<td align="center">很大</td>
+</tr>
+<tr>
+<td align="center">性质</td>
+<td align="center">断电后信息消失</td>
+<td align="center">断电后信息保存</td>
+</tr>
+<tr>
+<td align="center">用途</td>
+<td align="center">存放已经启动运行的程序和<br>需要立即处理的数据</td>
+<td align="center">长期存放计算机系统中<br>几乎所有的信息</td>
+</tr>
+<tr>
+<td align="center">与CPU关系</td>
+<td align="center">CPU能直接访问</td>
+<td align="center">先送内存，然后才能访问</td>
+</tr>
+</tbody></table>
+<p>  小结：任何程序，只有在<code>内存</code>中，才能运行</p>
+</li>
+<li><p>总线：</p>
+<ul>
+<li>功能：<p class='p red'>用于连接CPU，内存，外存控制器和各种I/O设备的控制器并在他们之间传输信息的一组共享的传输线及其控制电路</p></li>
+<li>分类：处理器总线（cpu总线），存储器总线，系统总线和外部总线<blockquote>
+<p>系统总线（I&#x2F;O总线）：连接内存和I&#x2F;O控制器的总线<br>I&#x2F;O设备通过I&#x2F;O接口与各自的控制器相连，也通过各自的控制器与I&#x2F;O总线相连 </p>
+</blockquote>
+</li>
+<li>总线带宽<code>不是</code>总线宽度，带宽是指<code>单位时间内传送的数据量</code></li>
+</ul>
+</li>
+<li><p>CPU的逻辑结构：CPU由<code>运算器</code>，<code>控制器</code>，<code>存储器</code>三部分组成<br> CPU是运算器和控制器的总称 </p>
+<ul>
+<li>冯·诺依曼计算机结构与原理：<code>&quot;存储程序控制原理&quot;</code>  ———也是现代计算机的工作原理</li>
+<li>计算机的工作由程序控制，程序是一个<code>指令序列</code>，<code>指令</code>是能被计算机理解和执行的操作命令</li>
+<li>程序和数据均以二进制编码表示，均存放在存储器中 <div class="note info flat"><p>关于指令<br>    指令：是构成程序的基本单位。由<code>操作码</code>和<code>操作数</code>组成，其中操作码决定了操作数的数量，操作码必须有，后者可以没有<br>    指令的执行过程：取指令-&gt;指令<code>译码</code>-&gt;执行指令-&gt;保存<br>    cpu可执行的全部指令称为cpu的<code>指令系统</code>，所以<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E8%AF%AD%E8%A8%80/2019225?fr=ge_ala">机器语言</a>就是指令系统<br>    如何衡量计算机和cpu的性能？<br>    1. 计算机的性能主要表现为<code>程序执行速度的快慢</code><br>    2. 计算机性能由许多因素决定：CPU，内存，硬盘，显卡..CPU通常为主要因素<br>    3. cpu的性能高低主要表现为<code>cpu的速度</code>（两种方法），详细见下文<br>        ① 计算每秒可执行的指令数目（单位：<code>MIPS</code>）<br>        ② PC大多使用软件测试性能</p>
+</div></li>
+</ul>
+</li>
+<li><p>影响CPU性能的主要因素</p>
+<ul>
+<li><p>字长（位数）:指通用寄存器和定点运算器的宽度（通常为8的倍数:64位）字长越长，运行程序的速度越快</p>
+ <div class="note info flat"><p>关于字长 计算机最小的存储单位：<code>Byte</code>（字节）1B&#x3D;8bit<br>若计算机字长为4个字节，泽定点运算器和寄存器为32位
+    </p>
+</div>
+</li>
+<li><p>指令系统</p>
+</li>
+<li><p>逻辑结构</p>
+</li>
+<li><p>高速缓存（<code>cache</code>）的容量和结构.cache越大，命中率越高，有利于CPU发挥工作效率。</p>
+</li>
+<li><p>主频（cpu内部时钟频率）单位一般为Hz.主频越高，执行一条指令的时间越少。运行程序的速度越快.</p>
+</li>
+<li><p>CPU总线速率：cpu总线速率越高，CPU等待从内存取指令和数据时间越少。运行程序速度越快。</p>
+<blockquote>
+<p>小结：提高cpu性能的措施</p>
+<blockquote>
+<p>扩展CPU的字长:32位-&gt;64位<br>扩充CPU的指令系统<br>提高CPU主频：从1.5Gz提升至3Gz以上，目前最高已接近4Ghz<br>加快CPU前端总线的数据传输速率<br>增大高速缓存容量，增加cache级数<br>改进CPU的内部逻辑结构<br>采用多内核结构</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="集成电路（IC）"><a href="#集成电路（IC）" class="headerlink" title="集成电路（IC）"></a>集成电路（IC）</h2><ol>
+<li>微电子技术的核心是集成电路</li>
+<li>发展与计算机类似：电子管-&gt;晶体管-&gt;中小规模集成电路-&gt;超大规模集成电路</li>
+<li>集成电路的特点：<u>体积小，重量轻，功耗小，成本低，速度快，可靠性高</u></li>
+<li><code>摩尔定律</code>：单块集成电路的集成度平均每18-24个月翻一番。<u>摩尔定律不可能永远成立</u></li>
+<li>集成电路按<code>用途</code>分为：<ul>
+<li>通用集成电路（cpu芯片，存储芯片等）</li>
+<li>专用集成电路（手机芯片，洗衣机芯片，数码相机芯片等）<br>集成电路按<code>功能</code>分为：数字集成电路 和 模拟集成电路<br>集成电路按<code>晶体管结构，电路和工艺</code>分为： 双极性电路，金属氧化物半导体电路</li>
+</ul>
+</li>
+<li>IC卡：集成电路卡，它把集成电路密封在塑料卡基片内，使其成为存储信息，处理和传递数据的载体</li>
+<li>IC卡的分类（按芯片分类）：<ul>
+<li>存储器卡：信息可长期保存，也可通过读卡器改写。<code>用于安全性要求不高的场合如电话卡，公交卡，医疗卡等</code> </li>
+<li>cpu卡：处理能力强，保密性能好。常用作证件和信用卡使用<u>（手机的SIM卡就是一种特殊的cpu卡</u>cpu卡自带<code>操作系统</code></li>
+</ul>
+</li>
+<li>IC卡的分类（按使用方式分类）：<ul>
+<li>接触式IC卡，如电话IC卡：使用时须将卡插入读卡机；用于信息量大，读写操作复杂的场合。但<u>易磨损，怕脏，寿命较短</u></li>
+<li>非接触式IC卡，如射频卡，公交卡等感应卡；操作方便，快捷，采用全密封胶固化，使用寿命长，一般用于读写信息较简单的场合</li>
+<li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8F%8C%E7%95%8C%E9%9D%A2%E5%8D%A1/6713997?fr=ge_ala">双界面卡</a>：同时兼备接触和非接触两种界面通信的多功能卡</li>
+</ul>
+</li>
+</ol>
+<h2 id="PC主机的组成"><a href="#PC主机的组成" class="headerlink" title="PC主机的组成"></a>PC主机的组成</h2><ol>
+<li><p><code>主板</code>：又称母板，计算机最重要的部件之一<br>作用：<u>安装所有的电子器件,电路与连接件</u><br>组成：一般有BIOS组件，I&#x2F;O控制芯片，键盘和面板控制开关接口，指示灯连接件等..</p>
+</li>
+<li><p><code>芯片组</code>:是主板电路的核心部件。功能主要是<font color=red>存储控制和I&#x2F;O控制</font><br>作用：是PC机各组成部分相互链接和通信的枢纽。实现了<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%B3%BB%E7%BB%9F%E6%80%BB%E7%BA%BF?fromModule=lemma_search-box">系统总线</a>功能<br>组成：由南桥芯片<code>（I/O控制中心）</code>和北桥芯片<code>（存储控制中心）</code>组成<br><font color=red>cpu的时钟信号由芯片组提供</font><br><font color=red>主板的功能，性能由芯片组决定。</font>任何有相同芯片组的主板，其功能性能特性大致相同。由于集成电路集成度越来越高，为降低版本，芯片组继承了越来越多的功能（包括网卡，显卡，声卡功能）</p>
+</li>
+<li><p>BIOS(Basic Input&#x2F;Output System):中文名“基本输入&#x2F;输出系统”，它是存放在主板上只读存储器<code>ROM</code>芯片中的一组<code>机器语言程序</code>（属于系统软件）<br>特点：断电后，保存的信息不会消失<br>功能:  诊断计算机故障，启动计算机工作，控制基本外设输入输出操作<br>BIOS芯片中包含的程序 </p>
+<ul>
+<li><strong>加电自检程序（POST）</strong> ——用于检测计算机硬件故障</li>
+<li><strong>系统自举程序（BOOT）</strong> ——从外存中读入引导程序，完成操作系统启动</li>
+<li>CMOS设置程序</li>
+<li>常用外部设备的驱动程序</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/CMOS/428167?fr=ge_ala">CMOS</a><br>特点：是<code>易失性</code>存储器RAM，停电后由主板上的纽扣电池供电，否则数据会丢失，只存放一些基本数据，不放程序。</p>
+</li>
+<li><p>内存储器</p>
+<ul>
+<li>DDR内存数据传输率计算： 数据传输率即内存带宽，只单位时间通过内存的数据量。以<code>GB/s</code>表示</li>
+<li>计算公式：内存带宽&#x3D;工作频率 * 位宽&#x2F;8</li>
+<li>内存DRAM种类：SDRAM,DDR SDRAM,DDR2 SDRAM…后者是前者速度的两倍</li>
+</ul>
+</li>
+<li><p>I&#x2F;O控制与I&#x2F;O接口<br>输入任务:将输入设备的输入信息送到内存储器的指定区域<br>输出任务:将内存储器的指定内容送出到输出设备<br>I&#x2F;O操作特点：<font color="red">I&#x2F;O操作设备工作速度比CPU慢的多</font><br>因此:<br> I&#x2F;O操作与CPU的运算可<code>同时进行</code><br> 多个I&#x2F;O设备操作也可同时进行工作<div class="hide-block"><button type="button" class="hide-button" style="background-color:  blue;">碎碎念
+    </button><div class="hide-content"><p>那是当然的喽，不然你键盘鼠标一次只能用一样还得了（笑）</p>
+</div></div>每类I&#x2F;O设备都有<u>各自的控制器</u>，独立控制I&#x2F;O操作全过程</p>
+ <div class="note info flat"><p>存储器速度（由快到慢） 寄存器&gt;cache存储器&gt;主存储器&gt;外存储器&gt;后备存储器</p>
+</div>
+
+<ul>
+<li>I&#x2F;O设备通过I&#x2F;O接口与主机相连</li>
+<li>I&#x2F;O设备通过I&#x2F;O接口与I&#x2F;O控制器相连</li>
+<li>I&#x2F;O设备通过I&#x2F;O控制器与总线相连</li>
+</ul>
+</li>
+</ol>
+<h2 id="常用输入设备"><a href="#常用输入设备" class="headerlink" title="常用输入设备"></a>常用输入设备</h2><ol>
+<li><p>键盘<br>有机械式（早期使用）和电容式（目前主流）<br>采用的接口类型：<code>PS/2接口</code>，<code>USB接口</code>，<code>无线接口</code></p>
+</li>
+<li><p>鼠标器<br><u>按键功能由正在运行的软件决定</u><br>有机电式鼠标和光电型鼠标（目前主流）<br>采用的接口类型：同键盘</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%89%AB%E6%8F%8F%E4%BB%AA/215294?fr=ge_ala">扫描仪</a><br>作用：将原稿（照片，图片，书稿）输入到计算机；输入到计算机的是原稿的<code>&quot;图像&quot;</code><br>在专业排版领域使用最广泛的扫描仪：胶片扫描仪和滚筒扫描仪<br>扫描仪主要性能指标：<code>光学分辨率，色彩位数，扫描幅面，与主机的接口类型</code></p>
+</li>
+<li><p>数码相机</p>
+</li>
+<li><p>数字摄像头</p>
+</li>
+<li><p>笔输入设备</p>
+</li>
+</ol>
+<h2 id="常用输出设备"><a href="#常用输出设备" class="headerlink" title="常用输出设备"></a>常用输出设备</h2><ol>
+<li><p>显示器<br>工作原理:将<code>数字信号</code>转换为<code>光信号</code>，使文字和图像在屏幕上显示出来<br>分类：<code>CRT</code>（阴极射线管显示器）,<code>LCD</code>（液晶显示器）</p>
+</li>
+<li><p>显卡<br>分类：集成显卡<del>还有人用集显打游戏？</del>，独立显卡<del>比如你最喜欢的4090</del>。一般使用PCI-E*16接口</p>
+</li>
+<li><p>打印机<br> 分类：针式打印机（又称击打式打印机）；激光打印机，喷墨打印机（这两又统称为非击打式打印机）</p>
+<ul>
+<li>针式打印机：<br> 工作原理：钢针垂直排列，每次击打打印一个字符的<emp>一列</emp>（有争议，有观点说是一排）;一般用于银行，证券，邮电，商业等打印存折和票据等</li>
+<li>激光打印机：<br> 工作原理：<font color="red">激光技术和复印技术的结合</font>（❗注：不是打印技术！）一般用于办公室和家庭使用</li>
+<li><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%96%B7%E5%A2%A8%E6%89%93%E5%8D%B0%E6%9C%BA">喷墨打印机</a></li>
+</ul>
+<p> 打印机性能指标：打印精度（分辨率，单位为api），打印速度（页数&#x2F;分钟，单位ppm），色彩表现能力，打印幅面，打印成本</p>
+</li>
+</ol>
+<h2 id="外存储器（外存）"><a href="#外存储器（外存）" class="headerlink" title="外存储器（外存）"></a>外存储器（外存）</h2><ol>
+<li>硬盘（由磁道和扇区组成）<br> 功能：长期保存二进制信息<br> 特点：可读可写，容量很大，可靠性高，成本极低<br> 分类：机械硬盘，固态硬盘，移动硬盘 <div class="hide-block"><button type="button" class="hide-button" style="background-color:  blue;">点我预览
+    </button><div class="hide-content"><p>这里有张图片：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb3e46bc0aa.png" alt="固态硬盘（SSD）" style="zoom:67%;" /><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb3e46bbc10.png" alt="移动硬盘" style="zoom:67%;" /><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb3e46cdc33.png" alt="机械硬盘" style="zoom:67%;" /></p>
+</div></div>
+ 机械和固态最主要区别：<font color="red">固态存取速度比机械要快</font><br> 接口类型：前些年使用：并行ATA(PATA)接口；当前流行：串行ATA(<code>SATA</code>)接口</li>
+<li>U盘，存储卡<br> U盘：属于<u>半导体集成电路存储器</u>,采用USB接口<del>说了句废话</del><br> 存储卡：原理与U盘相同，采用印刷接口</li>
+<li>光盘存储器<br> 分类：CD(红外光，650MB)；DVD（红光，大于等于4.7GB）;BD(蓝光，大于等于25GB)</li>
+</ol>
+<h2 id="信息在计算机中的表示"><a href="#信息在计算机中的表示" class="headerlink" title="信息在计算机中的表示"></a>信息在计算机中的表示</h2><ol>
+<li><p>比特（bit）中文译为”二进制数字”，”二进位”简称”位”，用小写字母<code>b</code>表示<br> 比特只有两种取值0，1（三无：无重量，无颜色，<code>无大小</code>）<br> 比特是组成数字信息的<u>最小单位</u></p>
+ <div class="tabs" id="内存换算"><ul class="nav-tabs"><li class="tab"><button type="button" data-href="#内存换算-1">内存换算</button></li><li class="tab"><button type="button" data-href="#内存换算-2">外存换算</button></li></ul><div class="tab-contents"><div class="tab-item-content" id="内存换算-1"><p>1KB&#x3D;2^10B&#x3D;1024B<br>1MB&#x3D;2^20B&#x3D;1024KB<br>1GB&#x3D;2^30B&#x3D;1024MB<br>…</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div><div class="tab-item-content" id="内存换算-2"><p>外存储器容量常用10的幂次来计算<br>1KB&#x3D;10^3B&#x3D;1000B<br>1MB&#x3D;10^6B&#x3D;1000KB<br>1GB&#x3D;10^9B&#x3D;1000MB<br>…</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div></div>
+<p> 比特的传输：传输速率表示每秒钟可传输的二进位数目<br> 常用单位：比特&#x2F;秒（<code>b/s</code>），也称”bps”如2400bps(2400b<br> &#x2F;s)<br> 千比特&#x2F;秒（<code>kb/s</code>） 1kb&#x2F;s&#x3D;10^3b&#x2F;s&#x3D;1000b&#x2F;s</p>
+</li>
+<li><p>常用进制</p>
+<ul>
+<li>十进制（0，1，2···9），标志：尾部加D或缺省<br> 例：204.96&#x3D;2x10^2+0x10^1+4x10^0+9x10^-1+6x10^-2</li>
+<li>二进制（0，1），标志：尾部加B<br> 例：101.01B&#x3D;1x2^2+0x2^1+1x2^0+0x2^-1+1x2^-2&#x3D;5.25</li>
+<li>八进制（0，1，2…7）,标志：尾部加Q</li>
+<li>十六进制（0，1，2…A,B…F）,标志：尾部加H<br> 例：F5.4H&#x3D;15x16^1+5x16^0+4x16^-1&#x3D;245.25 <details class="folding-tag" yellow><summary> 不同进制间的相互转换 </summary>
+              <div class='content'>
+              <p>十进制转二进制：<br>整数部分：除以2 逆序取余<br>小数部分：乘以2 顺序取整<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb548c3966d.png" alt="十进制转二进制"><br>二进制转八进制和十六进制，偷个懒直接上图吧<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb55b92c5b0.jpg" alt="421和8421法则"></p>
+              </div>
+            </details></li>
+</ul>
+</li>
+<li><p>整数编码表示</p>
+<ul>
+<li>无符号整数的表示：采用<code>自然码</code>表示，直接二进制展开</li>
+<li>取值范围：8位无符号整数的表示范围是0~255（(2^8)-1） <div class="note warning modern"><p>无符号n位二进制表示范围：0-2^(n-1)<br>无符号n位原码表示范围：-2^(n-1)+1<del>2^(n-1)-1<br>无符号n位补码表示范围：-2^(n-1)</del>2^(n-1)-1<br>无符号n位反码表示范围：-2^(n-1)+1~2^(n-1)-1<br>重要规律<br>1.若一个十进制数是(2^n)-1,则化成二进制数则是:1…1（n个1）<br>2.1000…0（1后面有n个0），其值为2^n<br><del>看晕了？没事，我也晕了；可是这玩意就是很重要233</del></p>
+</div></li>
+</ul>
+</li>
+<li><p>原码，反码与补码（符号位为0表示正数，为1表示负数）</p>
+<ul>
+<li>原码：正数的原码等于反码等于补码</li>
+<li>反码：对正数来说，其反码和原码形式相同；对负数来说，反码为其原码数值部分各位<code>取反</code>，符号位不变<br>   例：1001的反码:1110（符号位不变，其余位取反）</li>
+<li>补码：<u>正数的补码为其本身</u>补码的补码即为原码<br>  负数如何用补码表示：1.先把绝对值表示为自然码 2.将自然码每一位取反码 3.在最低位加1<br>  上例子：[-43]用8位补码表示<br>  ①-43转换成二进制原码为<code>10101011</code><br>  ②取反码: <code>11010100</code><br>  ③加一： <code>11010101</code></li>
+<li>0在原码和反码中有两种表示，在补码中只有一种表示方式。<br>  <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://icon.yejinblok.cn/img/0001.png" alt="0在原码反码补码的表示"> <div class="note warning modern"><p>补码运算时要注意的问题：<br>1.补码运算时，其<code>符号位</code>与数值部分一起参与运算<br>2.补码的符号位相加后，<u>如果有进位出现，要把这个进位舍去（自然丢失）</u><br>3.用补码运算，其结果亦为补码；在转换为真值时，其符号位为0，数位不变；若符号位为1，应将结果求补才是其真值</p>
+</div></li>
+</ul>
+</li>
+</ol>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h1><ol>
+<li>二进制的表示逻辑<br> <code>真</code>用1表示,<code>假</code>用0表示<br> 逻辑乘法（<code>逻辑与</code>运算）：运算符（and ^）,运算规则：按位运算，全1为1，否则为0<br> 逻辑加法（<code>逻辑或</code>运算）：运算符（or v）,运算规则：按位运算，全0为0，否则为1<br> 逻辑否定（<code>逻辑非</code>运算）：运算符（not -）,运算规则：按位运算，1取反为0，0取反为1<br> 异或运算：运算符（⊕）,运算规则：相同为0，否则为1</li>
+<li>计算机使用二进制的原因之一是<u>具有2个稳定状态的电子器件比较容易制造</u></li>
+<li>定点数和浮点数<ul>
+<li>定点数可以表示整数或小数（由小数点的位置决定）</li>
+<li>浮点数纯小数部分(尾部)越长,精度越高</li>
+</ul>
+</li>
+<li>半导体存储器分为<code>RAM</code>和<code>ROM</code><br> <code>RAM</code>又分为<code>SRAM</code>(静态随机)和<code>DRAM</code>(动态随机)<table>
+<thead>
+<tr>
+<th align="center">SRAM</th>
+<th align="center">DRAM</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">不需要刷新</td>
+<td align="center">每10~100ms刷新一次</td>
+</tr>
+<tr>
+<td align="center">读写速度较快</td>
+<td align="center">读写速度较慢</td>
+</tr>
+<tr>
+<td align="center">电路相对复杂</td>
+<td align="center">电路相对简单</td>
+</tr>
+<tr>
+<td align="center">集成度低</td>
+<td align="center">集成度高</td>
+</tr>
+<tr>
+<td align="center">能耗低</td>
+<td align="center">能耗高</td>
+</tr>
+<tr>
+<td align="center">成本较高</td>
+<td align="center">成本较低</td>
+</tr>
+<tr>
+<td align="center">一般用于cache存储器</td>
+<td align="center">一般用于主存</td>
+</tr>
+</tbody></table>
+ 硬盘的CACHE主要由DRAM组成</li>
+<li>计算机启动顺序：<code>POST</code>-&gt;<code>自举程序</code>-&gt;<code>引导程序</code>-&gt;<code>操作系统</code></li>
+<li>CD: <code>CD-ROM</code>（只读），<code>CD-R</code>(限写一次可写多次),<code>CD-RW</code>（可擦写）</li>
+<li>硬盘中不同磁道上所有扇区能存储的数据量是<u>相同的，存取密度不同</u></li>
+<li>左移与右移<ul>
+<li>左移表示扩大，每左移n位就是原来的m^n倍，m为进制基数，<code>逻辑左移与算术左移都是在末尾添0</code></li>
+<li>右移表示缩小，每右移n位就是原来的1&#x2F;m^n倍，m为进制基数，<code>逻辑右移，右移后左边补0</code>，<code>算术右移，右移后左边补对应符号位</code></li>
+</ul>
+</li>
+<li>软件容量的计算：软件容量&#x3D;磁道数x扇区数x盘面数x每扇区存区数</li>
+<li>内存寻址范围取决于地址线位数的多少（n），可寻址空间为2^n（0也算），所以可寻址范围为0~(2^n)-1</li>
+<li>地址总线的<code>位数</code>直接决定了CPU可直接寻址的空间大小</li>
+<li>硬盘的平均等待时间计算公式&#x3D;磁盘旋转一圈时间的一半&#x3D;<code>60/转速</code><br>平均存取时间&#x3D;寻道时间+旋转等待时间+数据传输时间</li>
+<li>硬盘上的一个扇区要用三个参数进行定位，分别是：柱面号，磁头号，扇区号</li>
+<li>通信技术主要用于扩展人的<code>神经系统传递信息的功能</code></li>
+<li>指令计数器：<font color="red">用来存取CPU正在执行指令的地址</font><br>指令寄存器：用来保存当前正在执行的指令</li>
+<li>集成度分类：（由小到极大）SSI,MSI,LSI,VLSL,ULSL</li>
+<li>南桥：I&#x2F;O控制中心；北桥：存储控制中心</li>
+<li><code>cache中的数据是内存的映射</code></li>
+<li>PC机中，管理I&#x2F;O设备运行全过程是<code>I/O控制器</code></li>
+<li>磁道是由里向外的同心圆；每个同心圆是一个磁道</li>
+<li>十进制转二进制无法实现精确转换</li>
+<li>USB2.0用4线接口；USB3.0用6线接口</li>
+<li>操作系统管理用户数据的单位是<code>文件</code></li>
+</ol>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">新奥尔良姬翅</div><div class="post-copyright__author_desc">无论什么时候，都不要后悔</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/')">计算机应用基础笔记（一）</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e828c.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e828c.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e5ac9.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/07/64d0fab2e5ac9.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=计算机应用基础笔记（一）&amp;url=http://example.com/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/&amp;pic=https://img01.anheyu.com/useruploads/243/2023/08/03/64cb2d535bebc.webp" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">吮指原味姬</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E7%AC%94%E8%AE%B0/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>笔记<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>计算机<span class="tagsPageCount">2</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://img01.anheyu.com/useruploads/243/2023/08/04/64cc46cedfcb4.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/01/hexo%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb6ba637891.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hexo魔改教程</div></div></a></div><div class="next-post pull-right"><a href="/2023/08/03/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%EF%BC%88%E4%B9%A6%E5%90%8D%E7%89%88%EF%BC%89/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/03/64cb6bbdd680a.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">给博客添加一个字数统计（书名版）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/08/06/2023-08-06-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" title="计算机应用基础笔记（二）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img01.anheyu.com/useruploads/243/2023/08/04/64cc46cedfcb4.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-08-06</div><div class="title">计算机应用基础笔记（二）</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">计算机硬件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.</span> <span class="toc-text">计算机基本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%86%E6%88%90%E7%94%B5%E8%B7%AF%EF%BC%88IC%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">集成电路（IC）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PC%E4%B8%BB%E6%9C%BA%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-number">1.3.</span> <span class="toc-text">PC主机的组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%BE%93%E5%85%A5%E8%AE%BE%E5%A4%87"><span class="toc-number">1.4.</span> <span class="toc-text">常用输入设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87"><span class="toc-number">1.5.</span> <span class="toc-text">常用输出设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E5%AD%98%E5%82%A8%E5%99%A8%EF%BC%88%E5%A4%96%E5%AD%98%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">外存储器（外存）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.7.</span> <span class="toc-text">信息在计算机中的表示</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-number">2.</span> <span class="toc-text">补充</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:anzhiyu-c@qq.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/6378063631" title="微博"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100092208016287&amp;sk=about" title="facebook"><i class="anzhiyufont anzhiyu-icon-facebook1"></i></a><img class="footer_mini_logo" title="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/372204786" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://v.douyin.com/DwCpMEy/" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="十年之约" target="_blank" rel="noopener" href="https://www.foreverblog.cn/">十年之约</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" href="/docs/">文档</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a><a class="footer-item" title="更新日志" href="/update/">更新日志</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By 新奥尔良姬翅 </div></div><div id="footer-type-tips"></div><div class="js-pjax"><script>function subtitleType () {
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      if (true) {
+        const from = '出自 ' + data.from
+        const sub = []
+        sub.unshift(data.hitokoto, from)
+        window.typed = new Typed('#footer-type-tips', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('footer-type-tips').innerHTML = data.hitokoto
+      }
+    })
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.cbd.int/typed.js@2.0.15/dist/typed.umd.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div></div></div><div id="sidebar"><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child" style="left:-127px;"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=8589095176&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> 追番页</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> 小空调</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child" style="left:-79px;"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.14/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.3.1/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("08/01/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 安知鱼 V1.5.3",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 新奥尔良姬翅 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "visitor@anheyu.com";</script><script>//动态标题
+let leaveTitle = 'w(ﾟДﾟ)w 不要走！再看看嘛！';
+let backTitle = '♪(^∇^*)欢迎肥来！';
+let OriginTitile = document.title
+let titleTime
+document.addEventListener('visibilitychange', function () {
+  if (document.hidden) {
+    //离开当前页面时标签显示内容
+    document.title = leaveTitle
+    clearTimeout(titleTime)
+  } else {
+    //返回当前页面时标签显示内容
+    document.title = backTitle + OriginTitile
+    //两秒后变回正常标题
+    titleTime = setTimeout(function () {
+      document.title = OriginTitile
+    }, 2000)
+  }
+})</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script>// 初始化函数
+let rm = {};
+
+//禁止图片与超链接拖拽
+let aElements = document.getElementsByTagName("a");
+for (let i = 0; i < aElements.length; i++) {
+  aElements[i].setAttribute("draggable", "false");
+  let imgElements = aElements[i].getElementsByTagName("img");
+  for (let j = 0; j < imgElements.length; j++) {
+    imgElements[j].setAttribute("draggable", "false");
+  }
+}
+
+// 显示菜单
+rm.showRightMenu = function (isTrue, x = 0, y = 0) {
+  console.info(x, y)
+  let rightMenu = document.getElementById("rightMenu");
+  rightMenu.style.top = x + "px";
+  rightMenu.style.left = y + "px";
+  if (isTrue) {
+    rightMenu.style.display = "block";
+    stopMaskScroll();
+  } else {
+    rightMenu.style.display = "none";
+  }
+};
+
+// 隐藏菜单
+rm.hideRightMenu = function () {
+  rm.showRightMenu(false);
+  let rightMenuMask = document.querySelector("#rightmenu-mask");
+  rightMenuMask.style.display = "none";
+};
+
+// 尺寸
+let rmWidth = document.getElementById("rightMenu").offsetWidth;
+let rmHeight = document.getElementById("rightMenu").offsetHeight;
+
+// 重新定义尺寸
+rm.reloadrmSize = function () {
+  rightMenu.style.visibility = "hidden";
+  rightMenu.style.display = "block";
+  // 获取宽度和高度
+  rmWidth = document.getElementById("rightMenu").offsetWidth;
+  rmHeight = document.getElementById("rightMenu").offsetHeight;
+  rightMenu.style.visibility = "visible";
+};
+
+// 获取点击的href
+let domhref = "";
+let domImgSrc = "";
+let globalEvent = null;
+
+var oncontextmenuFunction = function (event) {
+  if (document.body.clientWidth > 768) {
+    let pageX = event.clientX + 10; //加10是为了防止显示时鼠标遮在菜单上
+    let pageY = event.clientY;
+
+    //其他额外菜单
+    const $rightMenuOther = document.querySelector(".rightMenuOther");
+    const $rightMenuPlugin = document.querySelector(".rightMenuPlugin");
+    const $rightMenuCopyText = document.querySelector("#menu-copytext");
+    const $rightMenuPasteText = document.querySelector("#menu-pastetext");
+    const $rightMenuCommentText = document.querySelector("#menu-commenttext");
+    const $rightMenuNewWindow = document.querySelector("#menu-newwindow");
+    const $rightMenuNewWindowImg = document.querySelector("#menu-newwindowimg");
+    const $rightMenuCopyLink = document.querySelector("#menu-copylink");
+    const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
+    const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
+    const $rightMenuSearch = document.querySelector("#menu-search");
+    const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
+    const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
+    const $rightMenuMusicBack = document.querySelector("#menu-music-back");
+    const $rightMenuMusicForward = document.querySelector("#menu-music-forward");
+    const $rightMenuMusicPlaylist = document.querySelector("#menu-music-playlist");
+    const $rightMenuMusicCopyMusicName = document.querySelector("#menu-music-copyMusicName");
+
+    let href = event.target.href;
+    let imgsrc = event.target.currentSrc;
+
+    // 判断模式 扩展模式为有事件
+    let pluginMode = false;
+    $rightMenuOther.style.display = "block";
+    globalEvent = event;
+
+    // 检查是否需要复制 是否有选中文本
+    if (selectTextNow && window.getSelection()) {
+      pluginMode = true;
+      $rightMenuCopyText.style.display = "block";
+      $rightMenuCommentText.style.display = "block";
+      $rightMenuSearch.style.display = "block";
+      $rightMenuSearchBaidu.style.display = "block";
+    } else {
+      $rightMenuCopyText.style.display = "none";
+      $rightMenuCommentText.style.display = "none";
+      $rightMenuSearchBaidu.style.display = "none";
+      $rightMenuSearch.style.display = "none";
+    }
+
+    //检查是否右键点击了链接a标签
+    if (href) {
+      pluginMode = true;
+      $rightMenuNewWindow.style.display = "block";
+      $rightMenuCopyLink.style.display = "block";
+      domhref = href;
+    } else {
+      $rightMenuNewWindow.style.display = "none";
+      $rightMenuCopyLink.style.display = "none";
+    }
+
+    //检查是否需要复制图片
+    if (imgsrc) {
+      pluginMode = true;
+      $rightMenuCopyImg.style.display = "block";
+      $rightMenuDownloadImg.style.display = "block";
+      $rightMenuNewWindowImg.style.display = "block";
+      document.getElementById("rightMenu").style.width="12rem"
+      domImgSrc = imgsrc;
+    } else {
+      $rightMenuCopyImg.style.display = "none";
+      $rightMenuDownloadImg.style.display = "none";
+      $rightMenuNewWindowImg.style.display = "none";
+    }
+
+    // 判断是否为输入框
+    if (event.target.tagName.toLowerCase() === "input" || event.target.tagName.toLowerCase() === "textarea") {
+      pluginMode = true;
+      $rightMenuPasteText.style.display = "block";
+    } else {
+      $rightMenuPasteText.style.display = "none";
+    }
+    const navMusicEl = document.querySelector("#nav-music");
+    //判断是否是音乐
+    if (navMusicEl && navMusicEl.contains(event.target)) {
+      pluginMode = true;
+      $rightMenuMusicToggle.style.display = "block";
+      $rightMenuMusicBack.style.display = "block";
+      $rightMenuMusicForward.style.display = "block";
+      $rightMenuMusicPlaylist.style.display = "block";
+      $rightMenuMusicCopyMusicName.style.display = "block";
+    } else {
+      $rightMenuMusicToggle.style.display = "none";
+      $rightMenuMusicBack.style.display = "none";
+      $rightMenuMusicForward.style.display = "none";
+      $rightMenuMusicPlaylist.style.display = "none";
+      $rightMenuMusicCopyMusicName.style.display = "none";
+    }
+
+    // 如果不是扩展模式则隐藏扩展模块
+    if (pluginMode) {
+      $rightMenuOther.style.display = "none";
+      $rightMenuPlugin.style.display = "block";
+    } else {
+      $rightMenuPlugin.style.display = "none";
+    }
+
+    rm.reloadrmSize();
+
+    // 鼠标默认显示在鼠标右下方，当鼠标靠右或靠下时，将菜单显示在鼠标左方\上方
+    if (pageX + rmWidth > window.innerWidth) {
+      pageX -= rmWidth + 10;
+    }
+    if (pageY + rmHeight > window.innerHeight) {
+      pageY -= pageY + rmHeight - window.innerHeight;
+    }
+
+    rm.showRightMenu(true, pageY, pageX);
+    document.getElementById("rightmenu-mask").style.display = "flex";
+    return false;
+  }
+};
+
+// 监听右键初始化
+window.oncontextmenu = oncontextmenuFunction
+
+// 下载图片状态
+rm.downloadimging = false;
+
+// 复制图片到剪贴板
+rm.writeClipImg = function (imgsrc) {
+  console.log("按下复制");
+  rm.hideRightMenu();
+  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  if (rm.downloadimging == false) {
+    rm.downloadimging = true;
+    setTimeout(function () {
+      copyImage(imgsrc);
+      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      rm.downloadimging = false;
+    }, "10000");
+  }
+};
+
+function imageToBlob(imageURL) {
+  const img = new Image();
+  const c = document.createElement("canvas");
+  const ctx = c.getContext("2d");
+  img.crossOrigin = "";
+  img.src = imageURL;
+  return new Promise(resolve => {
+    img.onload = function () {
+      c.width = this.naturalWidth;
+      c.height = this.naturalHeight;
+      ctx.drawImage(this, 0, 0);
+      c.toBlob(
+        blob => {
+          // here the image is a blob
+          resolve(blob);
+        },
+        "image/png",
+        0.75
+      );
+    };
+  });
+}
+
+async function copyImage(imageURL) {
+  const blob = await imageToBlob(imageURL);
+  const item = new ClipboardItem({ "image/png": blob });
+  navigator.clipboard.write([item]);
+}
+
+rm.copyUrl = function (id) {
+  const input = document.createElement("input"); // Create a new <input> element
+  input.id = "copyVal"; // Set the id of the new element to "copyVal"
+  document.body.appendChild(input); // Append the new element to the end of the <body> element
+  
+  const text = id;
+  input.value = text;
+  input.select();
+  input.setSelectionRange(0, input.value.length);
+  document.execCommand("copy");
+  
+  input.remove(); // Remove the <input> element from the DOM
+};
+
+function stopMaskScroll() {
+  if (document.getElementById("rightmenu-mask")) {
+    let xscroll = document.getElementById("rightmenu-mask");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+  if (document.getElementById("rightMenu")) {
+    let xscroll = document.getElementById("rightMenu");
+    xscroll.addEventListener(
+      "mousewheel",
+      function (e) {
+        //阻止浏览器默认方法
+        rm.hideRightMenu();
+        // e.preventDefault();
+      },
+      { passive: true }
+    );
+  }
+}
+
+rm.rightmenuCopyText = function (txt) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(txt);
+  }
+  rm.hideRightMenu();
+};
+
+rm.copyPageUrl = function (url) {
+  if (!url) {
+    url = window.location.href;
+  }
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+rm.sharePage = function () {
+  var content = window.location.href;
+  rm.copyUrl(url);
+  anzhiyu.snackbarShow("复制链接地址成功", false, 2000);
+  rm.hideRightMenu();
+};
+
+// 复制当前选中文本
+var selectTextNow = "";
+document.onmouseup = document.ondblclick = selceText;
+
+function selceText() {
+  var txt;
+  if (document.selection) {
+    txt = document.selection.createRange().text;
+  } else {
+    txt = window.getSelection().toString();
+  }
+  selectTextNow = txt !== "" ? txt : "";
+}
+
+// 读取剪切板
+rm.readClipboard = function () {
+  if (navigator.clipboard) {
+    navigator.clipboard.readText().then(clipText => rm.insertAtCaret(globalEvent.target, clipText));
+  }
+};
+
+// 粘贴文本到焦点
+rm.insertAtCaret = function (elemt, value) {
+  const startPos = elemt.selectionStart,
+    endPos = elemt.selectionEnd;
+  if (document.selection) {
+    elemt.focus();
+    var sel = document.selection.createRange();
+    sel.text = value;
+    elemt.focus();
+  } else {
+    if (startPos || startPos == "0") {
+      var scrollTop = elemt.scrollTop;
+      elemt.value = elemt.value.substring(0, startPos) + value + elemt.value.substring(endPos, elemt.value.length);
+      elemt.focus();
+      elemt.selectionStart = startPos + value.length;
+      elemt.selectionEnd = startPos + value.length;
+      elemt.scrollTop = scrollTop;
+    } else {
+      elemt.value += value;
+      elemt.focus();
+    }
+  }
+};
+
+//粘贴文本
+rm.pasteText = function () {
+  const result = rm.readClipboard() || "";
+  rm.hideRightMenu();
+};
+
+//引用到评论
+rm.rightMenuCommentText = function (txt) {
+  rm.hideRightMenu();
+  const postCommentDom = document.getElementById("post-comment");
+  var domTop = postCommentDom.offsetTop;
+  window.scrollTo(0, domTop - 80);
+  if (txt == "undefined" || txt == "null") txt = "好棒！";
+  function setText() {
+    setTimeout(() => {
+      var input = document.getElementsByClassName("el-textarea__inner")[0];
+      if (!input) setText();
+      let evt = document.createEvent("HTMLEvents");
+      evt.initEvent("input", true, true);
+      let inputValue = replaceAll(txt, "\n", "\n> ");
+      input.value = "> " + inputValue + "\n\n";
+      input.dispatchEvent(evt);
+      input.focus();
+      input.setSelectionRange(-1, -1);
+      if (document.getElementById("comment-tips")) {
+        document.getElementById("comment-tips").classList.add("show");
+      }
+    }, 100);
+  }
+  setText();
+};
+
+//替换所有内容
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+// 百度搜索
+rm.searchBaidu = function () {
+  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  setTimeout(function () {
+    window.open("https://www.baidu.com/s?wd=" + selectTextNow);
+  }, "2000");
+  rm.hideRightMenu();
+};
+
+//分享链接
+rm.copyLink = function () {
+  rm.rightmenuCopyText(domhref);
+  anzhiyu.snackbarShow("已复制链接地址");
+};
+
+function addRightMenuClickEvent() {
+  // 添加点击事件
+  document.getElementById("menu-backward").addEventListener("click", function () {
+  window.history.back();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-forward").addEventListener("click", function () {
+    window.history.forward();
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-refresh").addEventListener("click", function () {
+    window.location.reload();
+  });
+
+  document.getElementById("menu-top").addEventListener("click", function () {
+    anzhiyu.scrollToDest(0, 500);
+    rm.hideRightMenu();
+  });
+
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", rm.hideRightMenu);
+  });
+
+  document.getElementById("menu-darkmode").addEventListener("click", anzhiyu.switchDarkMode);
+
+  document.getElementById("menu-home") && document.getElementById("menu-home").addEventListener("click", function () {
+    window.location.href = window.location.origin;
+  });
+
+  document.getElementById("menu-randomPost").addEventListener("click", function () {
+    toRandomPost();
+  });
+
+  document.getElementById("menu-commentBarrage").addEventListener("click", anzhiyu.switchCommentBarrage);
+
+  document.getElementById("rightmenu-mask").addEventListener("click", rm.hideRightMenu);
+
+  document.getElementById("rightmenu-mask").addEventListener("contextmenu", function (event) {
+    rm.hideRightMenu();
+    event.preventDefault(); // Prevent the default context menu from appearing
+  });
+
+  document.getElementById("menu-copy").addEventListener("click", rm.copyPageUrl);
+
+  document.getElementById("menu-pastetext").addEventListener("click", rm.pasteText);
+
+  document.getElementById("menu-copytext").addEventListener("click", function () {
+    rm.rightmenuCopyText(selectTextNow);
+    anzhiyu.snackbarShow("复制成功，复制和转载请标注本文地址");
+  });
+
+  document.getElementById("menu-commenttext").addEventListener("click", function () {
+    rm.rightMenuCommentText(selectTextNow);
+  });
+
+  document.getElementById("menu-newwindow").addEventListener("click", function () {
+    window.open(domhref, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copylink").addEventListener("click", rm.copyLink);
+
+  document.getElementById("menu-downloadimg").addEventListener("click", function () {
+    anzhiyu.downloadImage(domImgSrc, "anzhiyu");
+  });
+
+  document.getElementById("menu-newwindowimg").addEventListener("click", function () {
+    window.open(domImgSrc, "_blank");
+    rm.hideRightMenu();
+  });
+
+  document.getElementById("menu-copyimg").addEventListener("click", function () {
+    rm.writeClipImg(domImgSrc);
+  });
+
+  document.getElementById("menu-searchBaidu").addEventListener("click", rm.searchBaidu);
+
+  //音乐
+  document.getElementById("menu-music-toggle").addEventListener("click", anzhiyu.musicToggle);
+
+  document.getElementById("menu-music-back").addEventListener("click", anzhiyu.musicSkipBack);
+
+  document.getElementById("menu-music-forward").addEventListener("click", anzhiyu.musicSkipForward);
+
+  document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
+    rm.rightmenuCopyText(anzhiyu.musicGetName());
+    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+  });
+
+}
+
+addRightMenuClickEvent();</script><script data-pjax>var themeColorMeta = document.querySelector('meta[name="theme-color"]');
+var pageHeaderEl = document.getElementById("page-header");
+var navMusicEl = document.getElementById("nav-music");
+var consoleEl = document.getElementById("console");
+// 已随机的歌曲
+var selectRandomSong = [];
+// 音乐默认声音大小
+var musicVolume = 0.8;
+// 是否切换了周杰伦音乐列表
+var changeMusicListFlag = false;
+// 当前默认播放列表
+var defaultPlayMusicList = [];
+
+document.getElementById("page-name").innerText = document.title.split(" | 吮指原味姬")[0];
+anzhiyu.initIndexEssay();
+anzhiyu.changeTimeInEssay();
+anzhiyu.removeBodyPaceClass();
+anzhiyu.qrcodeCreate();
+anzhiyu.changeTimeInAlbumDetail();
+anzhiyu.reflashEssayWaterFall();
+anzhiyu.sayhi();
+anzhiyu.stopImgRightDrag();
+anzhiyu.addNavBackgroundInit();
+anzhiyu.setValueToBodyType();
+anzhiyu.catalogActive();
+anzhiyu.tagsPageActive();
+anzhiyu.categoriesBarActive();
+anzhiyu.topCategoriesBarScroll();
+anzhiyu.switchRightClickMenuHotReview();
+anzhiyu.getCustomPlayList();
+anzhiyu.addEventListenerConsoleMusicList(false);
+setTimeout(() => {if (typeof addFriendLinksInFooter === "function") {addFriendLinksInFooter();}}, 200)</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div></body></html>
