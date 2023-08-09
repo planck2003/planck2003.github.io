@@ -9119,7 +9119,7 @@ h1.page-title + .tag-cloud-list {
 }
 #footer-wrap {
   position: relative;
-  padding: 40px 20px 0;
+  padding: 40px 20px;
   color: var(--light-grey);
   text-align: center;
 }
@@ -19262,6 +19262,26 @@ html.hide-aside .layout > div:first-child {
 i.fas.fa-solid.fa-gear {
   animation: fa-spin 5s linear infinite;
 }
+
+@media screen and (min-width: 768px) {
+  [data-theme=light] #recent-posts>.recent-post-item:not(a) {
+      background:rgba(255, 255, 255, 0.85) !important;
+  }
+  [data-theme=dark] #recent-posts>.recent-post-item:not(a) {
+    background:rgba(25, 25, 25, 0.85) !important;
+  }
+}
+
+[data-theme=dark] #aside-content .card-widget,[data-theme=dark] #recent-posts>.recent-post-item,[data-theme=dark] div#archive,[data-theme=dark] div#page,[data-theme=dark] div#post {
+  background:rgba(25, 25, 25, 0.85) !important;
+}
+
+[data-theme=light] #category-bar {
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+[data-theme=dark] #category-bar  {
+  background:rgba(25, 25, 25, 0.85) !important;
+}
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
   display: flex;
@@ -21873,6 +21893,7 @@ div#archive {
     transform: scale(1.1);
   }
 }
+
 
 /* 顶部样式 */
 .fcircle_page .author-content.fcirclePage {
