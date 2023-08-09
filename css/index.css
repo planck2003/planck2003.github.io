@@ -5095,9 +5095,8 @@ body[data-type="about"] #web_bg {
   align-items: center;
 }
 .equipment-item .equipment-item-content .equipment-item-content-item img.equipment-item-content-item-image {
-  object-fit: contain;
-  height: 80%;
-  width: 260px;
+  object-fit: cover;
+  height: 100%;
 }
 .equipment-item .equipment-item-content .equipment-item-content-item .equipment-item-content-item-toolbar {
   display: -webkit-box;
@@ -19267,12 +19266,10 @@ i.fas.fa-solid.fa-gear {
   [data-theme=light] #recent-posts>.recent-post-item:not(a) {
       background:rgba(255, 255, 255, 0.85) !important;
   }
-  [data-theme=dark] #recent-posts>.recent-post-item:not(a) {
-    background:rgba(25, 25, 25, 0.85) !important;
-  }
+
 }
 
-[data-theme=dark] #aside-content .card-widget,[data-theme=dark] #recent-posts>.recent-post-item,[data-theme=dark] div#archive,[data-theme=dark] div#page,[data-theme=dark] div#post {
+[data-theme=dark] #aside-content .card-widget,[data-theme=dark] #recent-posts>.recent-post-item,[data-theme=dark] div#archive,[data-theme=dark] div#tags,[data-theme=dark] div#categories {
   background:rgba(25, 25, 25, 0.85) !important;
 }
 
@@ -19281,6 +19278,18 @@ i.fas.fa-solid.fa-gear {
 }
 [data-theme=dark] #category-bar  {
   background:rgba(25, 25, 25, 0.85) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .author-content-item .card-content .banner-button-group .banner-button {
+      background:rgb(0 0 0 / 20%);
+      backdrop-filter: saturate(180%) blur(20px)!important;
+      color: #fff
+  }
+}
+
+[data-theme=light] .equipment-item-content-item {
+  background: rgb(255 255 255 / 85%)!important;
 }
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
