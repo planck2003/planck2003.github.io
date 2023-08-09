@@ -9,13 +9,15 @@
     transition: .2s;
     display: flex;
     margin: 5px auto;
-    color: var(--global-bg);
+    color: #fefefe;
     padding: 15px;
     border-radius: 40px;
     background: var(--search-result-title);
     align-items: center;
 }
-
+[data-theme="dark"] .addBtn button {
+    color: #4c4948
+}
 button {
     padding: 0;
     outline: 0;
