@@ -1859,10 +1859,10 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-wihite-font: #fff;
 }
 [data-theme="light"] {
-  --anzhiyu-meta-theme-post-color: #fff;
-  --anzhiyu-meta-theme-color: #f7f9fe;
+  --anzhiyu-meta-theme-post-color: transparent;
+  --anzhiyu-meta-theme-color: transparent;
   --anzhiyu-theme-op-deep: rgba(66,89,239,0.867);
-  --global-bg: #f7f9fe;
+  --global-bg: transparent;
   --anzhiyu-theme: #fec4d9;
   --anzhiyu-theme-deep: #1856fb;
   --anzhiyu-theme-op: rgba(66,89,239,0.137);
@@ -1879,7 +1879,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-scrollbar: rgba(60,60,67,0.4);
   --anzhiyu-hovertext: var(--anzhiyu-theme);
   --anzhiyu-ahoverbg: #f7f7fa;
-  --anzhiyu-lighttext: var(--anzhiyu-main);
+  --anzhiyu-lighttext: #363636;
   --anzhiyu-secondtext: rgba(60,60,67,0.8);
   --anzhiyu-scrollbar: rgba(60,60,67,0.4);
   --anzhiyu-card-btn-bg: #edf0f7;
@@ -8502,7 +8502,7 @@ h1.page-title + .tag-cloud-list {
   flex-direction: column;
 }
 #aside-content >.card-widget.card-info {
-  background: var(--anzhiyu-card-bg);
+  background: #fff url("https://img01.anheyu.com/useruploads/243/2023/08/09/64d2e7c7f110f.webp") center no-repeat;
   -webkit-box-shadow: var(--anzhiyu-shadow-black);
   box-shadow: var(--anzhiyu-shadow-black);
   position: relative;
@@ -8519,11 +8519,6 @@ h1.page-title + .tag-cloud-list {
   position: relative;
 }
 #aside-content >.card-widget.card-info::before {
-  background: -webkit-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: -moz-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: -o-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: -ms-linear-gradient(115deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
-  background: linear-gradient(-25deg, var(--anzhiyu-main), var(--anzhiyu-main-op-deep), var(--anzhiyu-main), var(--anzhiyu-main-op-deep));
   background-size: 400%;
   position: absolute;
   width: 100%;
@@ -9019,7 +9014,8 @@ h1.page-title + .tag-cloud-list {
   padding: 1rem;
   color: var(--anzhiyu-fontcolor);
   margin-top: 1rem;
-  background: var(--anzhiyu-secondbg);
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(16px);
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -9592,6 +9588,7 @@ h1.page-title + .tag-cloud-list {
     height: 360px;
   }
   #page-header.post-bg.nav-fixed #nav {
+    font-size: 1.2em;
     background: var(--anzhiyu-card-bg);
     outline: 1px solid var(--anzhiyu-card-border);
   }
@@ -14289,13 +14286,21 @@ li.card-category-list-item {
 #aside-content .card-widget {
   -webkit-box-shadow: var(--anzhiyu-shadow-border);
   box-shadow: var(--anzhiyu-shadow-border);
-  background: var(--anzhiyu-card-bg);
+  background: rgba(255,255,255,0.6);
   border: var(--style-border);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
+}
+[data-theme="dark"] #aside-content .card-widget {
+  background: var(--anzhiyu-card-bg);
+}
+#aside-content .card-widget:hover {
+  -webkit-box-shadow: 0 4px 12px 4px var(--anzhiyu-main);
+  -webkit-box-shadow: 0 4px 12px 4px var(--anzhiyu-main);
+  box-shadow: 0 4px 12px 4px var(--anzhiyu-main);
 }
 #aside-content hr {
   display: -webkit-box;
@@ -18933,6 +18938,169 @@ html.hide-aside .layout > div:first-child {
   }
 }
 
+
+/* 日间模式不生效 */
+[data-theme="light"] #site-name,
+[data-theme="light"] #site-title,
+[data-theme="light"] #site-subtitle,
+[data-theme="light"] #post-info {
+  animation: none;
+}
+/* 夜间模式生效 */
+[data-theme="dark"] #site-name,
+[data-theme="dark"] #site-title {
+  animation: light_15px 10s linear infinite;
+}
+[data-theme="dark"] #site-subtitle {
+  animation: light_10px 10s linear infinite;
+}
+[data-theme="dark"] #post-info {
+  animation: light_5px 10s linear infinite;
+}
+/* 关键帧描述 */
+@keyframes light_15px {
+  0% {
+    text-shadow: #5636ed 0 0 15px;
+  }
+  12.5% {
+    text-shadow: #11ee5e 0 0 15px;
+  }
+  25% {
+    text-shadow: #f14747 0 0 15px;
+  }
+  37.5% {
+    text-shadow: #f1a247 0 0 15px;
+  }
+  50% {
+    text-shadow: #f1ee47 0 0 15px;
+  }
+  50% {
+    text-shadow: #b347f1 0 0 15px;
+  }
+  62.5% {
+    text-shadow: #002afa 0 0 15px;
+  }
+  75% {
+    text-shadow: #ed709b 0 0 15px;
+  }
+  87.5% {
+    text-shadow: #39c5bb 0 0 15px;
+  }
+  100% {
+    text-shadow: #5636ed 0 0 15px;
+  }
+}
+
+@keyframes light_10px {
+  0% {
+    text-shadow: #5636ed 0 0 10px;
+  }
+  12.5% {
+    text-shadow: #11ee5e 0 0 10px;
+  }
+  25% {
+    text-shadow: #f14747 0 0 10px;
+  }
+  37.5% {
+    text-shadow: #f1a247 0 0 10px;
+  }
+  50% {
+    text-shadow: #f1ee47 0 0 10px;
+  }
+  50% {
+    text-shadow: #b347f1 0 0 10px;
+  }
+  62.5% {
+    text-shadow: #002afa 0 0 10px;
+  }
+  75% {
+    text-shadow: #ed709b 0 0 10px;
+  }
+  87.5% {
+    text-shadow: #39c5bb 0 0 10px;
+  }
+  100% {
+    text-shadow: #5636ed 0 0 10px;
+  }
+}
+
+@keyframes light_5px {
+  0% {
+    text-shadow: #5636ed 0 0 5px;
+  }
+  12.5% {
+    text-shadow: #11ee5e 0 0 5px;
+  }
+  25% {
+    text-shadow: #f14747 0 0 5px;
+  }
+  37.5% {
+    text-shadow: #f1a247 0 0 15px;
+  }
+  50% {
+    text-shadow: #f1ee47 0 0 5px;
+  }
+  50% {
+    text-shadow: #b347f1 0 0 5px;
+  }
+  62.5% {
+    text-shadow: #002afa 0 0 5px;
+  }
+  75% {
+    text-shadow: #ed709b 0 0 5px;
+  }
+  87.5% {
+    text-shadow: #39c5bb 0 0 5px;
+  }
+  100% {
+    text-shadow: #5636ed 0 0 5px;
+  }
+}
+
+#nav {
+  font-size: 1.2em
+}
+
+[data-theme=light] #page-header.nav-fixed #nav {
+  background: rgba(255, 255, 255, 0.75)!important;
+  backdrop-filter: blur(5px)
+}
+
+[data-theme=dark] #page-header.nav-fixed #nav {
+  background: rgba(58,57,57,.6)!important;
+  backdrop-filter: blur(5px)
+}
+
+
+/* 头像呼吸灯 */
+[data-theme="light"] .avatar-img {
+  animation: huxi_light 4s ease-in-out infinite;
+}
+[data-theme="dark"] .avatar-img {
+  animation: huxi_dark 4s ease-in-out infinite;
+}
+@keyframes huxi_light {
+  0% {
+    box-shadow: 0px 0px 1px 1px #fec4d9;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #fec4d9;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #fec4d9;
+  }
+}
+@keyframes huxi_dark {
+  0% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #39c5bb;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+}
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
   display: flex;
