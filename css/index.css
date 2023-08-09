@@ -19291,6 +19291,27 @@ i.fas.fa-solid.fa-gear {
 [data-theme=light] .equipment-item-content-item {
   background: rgb(255 255 255 / 85%)!important;
 }
+
+body[data-type=equipment] #web_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ body[data-type=about] #web_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ body[data-type=album] #web_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ /* body[data-type="essay"] #web_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ } */
 #aside-content .card-widget#card-wechat {
   background: #57bd6a;
   display: flex;
@@ -20963,6 +20984,9 @@ body[data-type="essay"] #page .page-title {
 }
 body[data-type="essay"] #web_bg {
   background: var(--anzhiyu-background);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #bber .bber-container-img {
   display: flex;
