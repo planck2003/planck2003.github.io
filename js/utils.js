@@ -1500,7 +1500,7 @@ function createWinbox() {
   <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img01.anheyu.com/useruploads/243/2023/07/28/64c319eace9ca.webp)" class="pimgbox" onclick="changeBg('url(https\://img01.anheyu.com/useruploads/243/2023/07/28/64c319eace9ca.webp)')"></a>
   </div>
   
-  <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
+  <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）(目前有部分壁纸存在样式bug，正在修复中)</h2>
   <div class="bgbox">
   <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img01.anheyu.com/useruploads/243/2023/07/28/64c319e5ea9a1.webp)" class="imgbox" onclick="changeBg('url(https://img01.anheyu.com/useruploads/243/2023/07/28/64c319e5ea9a1.webp)')"></a>
   <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img01.anheyu.com/useruploads/243/2023/07/28/64c319e5ea915.webp)" class="imgbox" onclick="changeBg('url(https://img01.anheyu.com/useruploads/243/2023/07/28/64c319e5ea915.webp)')"></a>
