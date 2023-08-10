@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/08/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0(%E4%B8%80)/</loc>
+    <loc>https://www.yejinblok.cn/posts/51509cba.html</loc>
     
     <lastmod>2023-08-08</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/08/06/2023-08-06-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/</loc>
+    <loc>https://www.yejinblok.cn/posts/61467062.html</loc>
     
     <lastmod>2023-08-08</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/08/04/2023-08-04-IE%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%90%E7%A4%BA%E2%80%9C%E4%BD%A0%E5%B0%9A%E6%9C%AA%E8%BF%9E%E6%8E%A5%E2%80%9D%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
+    <loc>https://www.yejinblok.cn/posts/f82d5031.html</loc>
     
     <lastmod>2023-08-04</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/08/03/%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%EF%BC%88%E4%B9%A6%E5%90%8D%E7%89%88%EF%BC%89/</loc>
+    <loc>https://www.yejinblok.cn/posts/52bd0754.html</loc>
     
     <lastmod>2023-08-03</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/08/01/hexo%E9%AD%94%E6%94%B9%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://www.yejinblok.cn/posts/fed1faec.html</loc>
     
     <lastmod>2023-08-01</lastmod>
     
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/07/28/live2d%E6%A8%A1%E5%9E%8B%E6%B7%BB%E5%8A%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://www.yejinblok.cn/posts/ff2f24f1.html</loc>
     
     <lastmod>2023-07-28</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/07/24/%E4%B8%BB%E9%A1%B5%E6%97%8B%E8%BD%AC%E5%B0%8F%E4%BA%BA/</loc>
+    <loc>https://www.yejinblok.cn/posts/d9da9cb3.html</loc>
     
     <lastmod>2023-07-24</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/2023/07/21/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%92%8C%E7%BE%8E%E5%8C%96%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%BF%83%E5%BE%97/</loc>
+    <loc>https://www.yejinblok.cn/posts/a2a881f3.html</loc>
     
     <lastmod>2023-07-21</lastmod>
     
@@ -198,20 +198,6 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-08-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yejinblok.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
-    <lastmod>2023-08-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yejinblok.cn/tags/hexo/</loc>
     <lastmod>2023-08-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,6 +206,20 @@
   
   <url>
     <loc>https://www.yejinblok.cn/tags/live2d/</loc>
+    <lastmod>2023-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yejinblok.cn/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2023-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yejinblok.cn/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
     <lastmod>2023-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -242,14 +242,14 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://www.yejinblok.cn/categories/%E5%AD%A6%E4%B9%A0%E5%AE%87%E5%AE%99%E6%9C%BA/</loc>
     <lastmod>2023-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/categories/%E5%AD%A6%E4%B9%A0%E5%AE%87%E5%AE%99%E6%9C%BA/</loc>
+    <loc>https://www.yejinblok.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
