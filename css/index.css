@@ -19313,7 +19313,7 @@ body[data-type=equipment] #web_bg {
   background-size: cover;
  } */
 #aside-content .card-widget#card-wechat {
-  background: #57bd6a;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-content: center;
