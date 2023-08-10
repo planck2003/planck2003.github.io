@@ -23082,7 +23082,7 @@ div#swiper_container:hover {
     position: relative;
     overflow: hidden;
     will-change: transform; /* 添加性能优化 */
-    animation: blur-to-clear 2s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
+    animation: blur-to-clear 2.7s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
   }
   .pl-img {
     width: 100%;
@@ -23092,7 +23092,7 @@ div#swiper_container:hover {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1.5s;
   }
   
   @keyframes blur-to-clear {
