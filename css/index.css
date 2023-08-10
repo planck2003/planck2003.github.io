@@ -19339,8 +19339,9 @@ body[data-type=equipment] #web_bg {
   z-index: 1;
 }
 #flip-content {
-  width: 100%;
+  width: 120%;
   height: 100%;
+  left: -25px !important;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: cubic-bezier(0, 0, 0, 1.29) 0.3s;
