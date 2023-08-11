@@ -8990,7 +8990,7 @@ h1.page-title + .tag-cloud-list {
 }
 #footer {
   position: relative;
-  background: rgba(255,255,255,0);
+  background: rgba(255,255,255,0.4);
   color: #000;
   backdrop-filter: saturate(100%) blur(5px);
   background-attachment: scroll;
@@ -19424,7 +19424,8 @@ body[data-type=todolist] #page {
   padding:50px 5% 35px 5%;
   display:flex;
   flex-wrap:wrap;
-  background:var(--ichika-footer-bg);
+  /* background:rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px); */
   position:relative;
 }
 
