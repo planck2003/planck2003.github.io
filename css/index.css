@@ -19557,6 +19557,39 @@ body[data-type=todolist] #page {
       margin:0 auto;
   }
 }
+
+/* live2d 模型居右 */
+#oml-stage {
+  right: 60px !important;
+  left: auto !important;
+  z-index: 30 !important;
+  bottom: -15px !important;
+}
+/* live2d tips 深色 */
+[data-theme='dark'] #oml-tips {
+  background-color: #121212;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* filter: drop-shadow(0 0 5px #999); */
+  filter: none;
+}
+/* live2d 左边提示 深色 */
+[data-theme='dark'] #oml-levitated-btn {
+  background-color: #121212;
+  border-style: solid;
+  border-width: 2px 2px 2px 0px;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 4px #999;
+}
+/* live2d 切换按钮 深色 */
+[data-theme='dark'] #oml-controls .oml-control-item {
+  background-color: #1f1f1f;
+}
+[data-theme='dark'] #oml-controls .oml-control-item:hover {
+  background-color: #787878;
+}
+[data-theme='dark'] #oml-controls .oml-control-item svg {
+  color: rgba(255, 255, 255, 0.7);
+}
 #aside-content .card-widget#card-wechat {
   background: transparent;
   display: flex;
