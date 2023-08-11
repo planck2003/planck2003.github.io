@@ -19560,9 +19560,9 @@ body[data-type=todolist] #page {
 
 /* live2d 模型居右 */
 #oml-stage {
-  right: 60px !important;
+  right: -1px !important;
   left: auto !important;
-  z-index: 30 !important;
+  z-index: 0 !important;
   bottom: -15px !important;
 }
 /* live2d tips 深色 */
