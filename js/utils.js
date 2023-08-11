@@ -1549,3 +1549,8 @@ function toggleWinbox() {
   if (document.querySelector('#changeBgBox')) winbox.toggleClass('hide');
   else createWinbox();
 }
+
+
+function scrollToTop() {
+  btf.scrollToDest(0, 500);
+}
