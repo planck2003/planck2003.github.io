@@ -1879,7 +1879,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-scrollbar: rgba(60,60,67,0.4);
   --anzhiyu-hovertext: var(--anzhiyu-theme);
   --anzhiyu-ahoverbg: #f7f7fa;
-  --anzhiyu-lighttext: #363636;
+  --anzhiyu-lighttext: #fec4d9;
   --anzhiyu-secondtext: rgba(60,60,67,0.8);
   --anzhiyu-scrollbar: rgba(60,60,67,0.4);
   --anzhiyu-card-btn-bg: #edf0f7;
@@ -1917,7 +1917,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-hovertext: #0a84ff;
   --anzhiyu-ahoverbg: #fff;
   --anzhiyu-scrollbar: rgba(200,200,223,0.4);
-  --anzhiyu-lighttext: #f2b94b;
+  --anzhiyu-lighttext: #00c4b9;
   --anzhiyu-secondtext: #a1a2b8;
   --anzhiyu-scrollbar: rgba(200,200,223,0.4);
   --anzhiyu-card-btn-bg: #30343f;
@@ -19589,6 +19589,10 @@ body[data-type=todolist] #page {
 }
 [data-theme='dark'] #oml-controls .oml-control-item svg {
   color: rgba(255, 255, 255, 0.7);
+}
+
+#article-container a {
+  color: #a591e0 !important;
 }
 #aside-content .card-widget#card-wechat {
   background: transparent;
