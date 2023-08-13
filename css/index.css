@@ -19575,7 +19575,7 @@ body[data-type=todolist] #page {
 #oml-stage {
   right: -1px !important;
   left: auto !important;
-  z-index: 0 !important;
+  z-index: 30 !important;
   bottom: -15px !important;
 }
 /* live2d tips 深色 */
