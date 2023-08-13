@@ -8553,6 +8553,14 @@ h1.page-title + .tag-cloud-list {
   -ms-transform: scale(0);
   transform: scale(0);
 }
+#aside-content .card-info:hover .card-content {
+  backdrop-filter: blur(10px);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
 #aside-content .card-info .author-info-top {
   margin: 45px auto;
   display: -webkit-box;
