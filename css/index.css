@@ -19607,6 +19607,40 @@ body[data-type=todolist] #page {
 #article-container a {
   color: #a591e0 !important;
 }
+
+#site-title {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto!important;
+  position: relative;
+  color: #fff0;
+  -webkit-animation: show 1.5s linear 1s 1 both !important;
+  animation: show 1.5s linear 1s 1 both !important;
+}
+
+#site-subtitle {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto!important;
+  position: relative;
+  -webkit-animation: show 1.5s linear 1s 1 both !important;
+  animation: show 1.5s linear 1s 1 both !important;
+}
+
+@keyframes show {
+  0% {
+    color: #fff0;
+    text-shadow: 2px 3px 10px transparent;
+  }
+  81% {
+    color: #fff0;
+    text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
+  }
+  100% {
+    color: #fff;
+    text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
+  }
+}
 #aside-content .card-widget#card-wechat {
   background: transparent;
   display: flex;
