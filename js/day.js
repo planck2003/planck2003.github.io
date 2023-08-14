@@ -7,28 +7,28 @@ y = d.getFullYear();
 if (m == 9 && dd == 18) {
     document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
     if (sessionStorage.getItem("isPopupWindow") != "1") {
-        Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
+        Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n不忘国耻，匹夫有责!");
         sessionStorage.setItem("isPopupWindow", "1");
     }
 }
 if (m == 7 && dd == 7) {
     document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
     if (sessionStorage.getItem("isPopupWindow") != "1") {
-        Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
+        Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n晓月卢沟，怎忘当年，战火曳空！");
         sessionStorage.setItem("isPopupWindow", "1");
     }
 }
 if (m == 12 && dd == 13) {
     document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
     if (sessionStorage.getItem("isPopupWindow") != "1") {
-        Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");
+        Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n难忘却金陵喋血，六朝烟雨同悲泣");
         sessionStorage.setItem("isPopupWindow", "1");
     }
 }
 if (m == 8 && dd == 14) {
     document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");
     if (sessionStorage.getItem("isPopupWindow") != "1") {
-        Swal.fire("今天是世界慰安妇纪念日\n🪔勿忘国耻，振兴中华🪔");
+        Swal.fire("今天是世界慰安妇纪念日\n勿忘国耻，振兴中华");
         sessionStorage.setItem("isPopupWindow", "1");
     }
 }
