@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>【碧蓝航线】解放双手，使用ALAS实现全自动日常</title>
+      <link href="/posts/b6951580.html"/>
+      <url>/posts/b6951580.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p> 本文链接部分摘自作者：ALAS-Official <a href="https://www.bilibili.com/read/cv24169549?from=search&spm_id_from=333.337.0.0">https://www.bilibili.com/read/cv24169549?from=search&amp;spm_id_from=333.337.0.0</a> 出处：bilibili</p><p>柴郡猫猫真好看（嘿嘿嘿♪(´▽｀)</p><p><img src="https://img01.anheyu.com/useruploads/243/2023/08/15/64dae0c59ba7a.png"><br><img src="https://img01.anheyu.com/useruploads/243/2023/07/28/64c319eacc9cd.jpg"></p><p>咳咳，言归正传。先前入坑碧蓝也有一段时间了，虽然这游戏不算很肝，但是每次战斗结算操作和日常还是有些过于繁琐了<del>真的不是我懒</del>，想到有没有根据图像识别实现自动点击的脚本，发现早就有大佬写过了，而且相当的好用，这就是护肝神器【ALAS】</p><p>ALAS完全开源免费，贴上源项目地址</p><div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://github.com/LmeSzinc/AzurLaneAutoScript">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="background-image: url(https://api.iowen.cn/favicon/github.com/LmeSzinc/AzurLaneAutoScript.png);"></div>        <div class="tag-link-right">            <div class="tag-link-title">AzurLaneAutoScript</div>            <div class="tag-link-sitename">LmeSzinc</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div><p>目前alas能做到哪些事？</p><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>每日任务</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>刷图（可指定刷哪张图，刷几次，甚至有防红脸机制）</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>活动图开荒（每张图不用重复点击结算，好评）</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>大世界开荒（你说官方有计划作战？感觉不如alas，同样是挂机还能省5000油）</p>            </div><div class='checkbox green checked'><input type="checkbox" checked="checked"/>            <p>无缝收菜（可以不用半夜收科研了~ 什么？你说8小时基础研究？谁还做那玩意）</p>            </div><div class='checkbox plus green checked'><input type="checkbox" checked="checked"/>            <p>更多..</p>            </div><span class='p center logo large red'>会封号吗？</span><p><img src="https://icon.yejinblok.cn/img/0009.png"><br>目前我使用了半年，没有任何问题：alas实质上只是一个根据图像识别模拟人类进行点击的脚本，与修改游戏数值的外挂是不一样的</p><h1 id="官方教程"><a href="#官方教程" class="headerlink" title="官方教程"></a>官方教程</h1><p><a href="github.com/LmeSzinc/AzurLaneAutoScript/wiki/Installation_cn">ALAS官方中文安装教程</a></p><p><a href="github.com/LmeSzinc/AzurLaneAutoScript/wiki/Emulator_cn">ALAS官方设备推荐+配置教程</a></p><p>官方教程已足够详细，我只说一下要点</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="下载并初始化"><a href="#下载并初始化" class="headerlink" title="下载并初始化"></a>下载并初始化</h2><div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://github.com/LmeSzinc/AzurLaneAutoScript/releases">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="background-image: url(https://api.iowen.cn/favicon/github.com/LmeSzinc/AzurLaneAutoScript/releases.png);"></div>        <div class="tag-link-right">            <div class="tag-link-title">安装包下载页面</div>            <div class="tag-link-sitename">LmeSzinc</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div><p>进入下载页面，下载<code>AlasApp_0.4.3_fullcn.7z</code>并解压缩，上面是英文版的</p><p><img src="https://icon.yejinblok.cn/img/0010.png"></p><p>双击打开Alas.exe后软件会进行环境配置，耐心等待即可</p><h2 id="模拟器配置"><a href="#模拟器配置" class="headerlink" title="模拟器配置"></a>模拟器配置</h2><ol><li><p>这里我比较推荐mumu模拟器（先前用的雷神，可能是我自己原因容易卡死），配置简单容易</p></li><li><p>按照官方教程，在模拟器这样设置（以mumu为例）：</p><p> <img src="https://icon.yejinblok.cn/img/0011.png"></p></li></ol><h2 id="Alas设置"><a href="#Alas设置" class="headerlink" title="Alas设置"></a>Alas设置</h2><p>性能测试你完全可以按照官方的来，这里略过</p><h2 id="游戏设置"><a href="#游戏设置" class="headerlink" title="游戏设置"></a>游戏设置</h2><ol><li><p>游戏主界面设置选项：<br><img src="https://icon.yejinblok.cn/img/0012.png"><br><img src="https://icon.yejinblok.cn/img/0013.png"></p></li><li><p>游戏主界面-&gt;建造-&gt;退役-&gt;左下角设置图标<br><img src="https://icon.yejinblok.cn/img/0014.png"></p></li></ol><h1 id="配置Alas任务"><a href="#配置Alas任务" class="headerlink" title="配置Alas任务"></a>配置Alas任务</h1><p>如果你按照官方文档全部配置完成，就可以开始使用了，将自己想要实现的功能设置完成并配置到调度器里，点击运行就大功告成啦！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏世界 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 碧蓝航线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算机应用基础笔记（二）</title>
       <link href="/posts/61467062.html"/>
       <url>/posts/61467062.html</url>

@@ -19641,6 +19641,8 @@ body[data-type=todolist] #page {
     text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
   }
 }
+
+
 #aside-content .card-widget#card-wechat {
   background: transparent;
   display: flex;
