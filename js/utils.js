@@ -1398,8 +1398,8 @@ const executeLoad = (config, target) => {
 const config = {
   smallSrc: 'https://img01.anheyu.com/useruploads/243/2023/07/31/64c7d0b9d6e73.jpg', // 小图链接 尽可能配置小于100k的图片
   largeSrc: 'https://t.mwm.moe/pc', // 大图链接 最终显示的图片
-  mobileSmallSrc: '/img/sjxt.jpg', // 手机端小图链接 尽可能配置小于100k的图片
-  mobileLargeSrc: '/img/sjdt.jpg', // 手机端大图链接 最终显示的图片
+  mobileSmallSrc: 'https://img01.anheyu.com/useruploads/243/2023/07/31/64c7d0b9d6e73.jpg', // 手机端小图链接 尽可能配置小于100k的图片
+  mobileLargeSrc: 'https://t.mwm.moe/mp', // 手机端大图链接 最终显示的图片
   enableRoutes: ['/'],
   };
 
