@@ -1,5 +1,6 @@
-https://www.yejinblok.cn/posts/2c58d330.html
+https://www.yejinblok.cn/about/index.html
 https://www.yejinblok.cn/link/index.html
+https://www.yejinblok.cn/posts/2c58d330.html
 https://www.yejinblok.cn/posts/d50a.html
 https://www.yejinblok.cn/categories/index.html
 https://www.yejinblok.cn/posts/b6951580.html
@@ -14,7 +15,6 @@ https://www.yejinblok.cn/essay/index.html
 https://www.yejinblok.cn/equipment/index.html
 https://www.yejinblok.cn/dailyPhoto/index.html
 https://www.yejinblok.cn/album/index.html
-https://www.yejinblok.cn/about/index.html
 https://www.yejinblok.cn/posts/51509cba.html
 https://www.yejinblok.cn/tags/index.html
 https://www.yejinblok.cn/json/music.json
