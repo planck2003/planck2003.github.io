@@ -19648,7 +19648,7 @@ body[data-type=todolist] #page {
 
 
 /* 鼠标样式更改 */
-body {
+/* body {
   cursor: url(https://bu.dusays.com/2022/05/17/6283c365d20dd.png), auto;
 }
 
@@ -19661,7 +19661,7 @@ a,
 button,
 img {
   cursor: url(https://bu.dusays.com/2022/05/17/6283c376afcfc.png), auto
-}
+} */
 
 #aside-content .card-widget#card-wechat {
   background: transparent;
