@@ -1876,7 +1876,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-pink: #ff7c7c;
   --anzhiyu-green: #57bd6a;
   --anzhiyu-fontcolor: #363636;
-  --anzhiyu-background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  --anzhiyu-background: #ece9e6;
   --anzhiyu-reverse: #000;
   --anzhiyu-maskbg: rgba(255,255,255,0.6);
   --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
@@ -19182,8 +19182,8 @@ html.hide-aside .layout > div:first-child {
   }
 
   [data-theme=light] #nav .menus_items .menus_item .menus_item_child {
-    background-color: rgba(255,255,255,.6)!important;
-    backdrop-filter: blur(7px)!important;
+    background-color: rgba(255,255,255,.8)!important;
+    backdrop-filter: blur(10px)!important;
     -webkit-backdrop-filter: blur(7px)!important;
   }
 
