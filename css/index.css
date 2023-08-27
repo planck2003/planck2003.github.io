@@ -1876,7 +1876,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-pink: #ff7c7c;
   --anzhiyu-green: #57bd6a;
   --anzhiyu-fontcolor: #363636;
-  --anzhiyu-background: linear-gradient(to bottom, #a8edea, #fed6e3);
+  --anzhiyu-background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
   --anzhiyu-reverse: #000;
   --anzhiyu-maskbg: rgba(255,255,255,0.6);
   --anzhiyu-maskbgdeep: rgba(255,255,255,0.85);
@@ -1914,7 +1914,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-pink: #ff7c7c;
   --anzhiyu-green: #57bd6a;
   --anzhiyu-fontcolor: #f7f7fa;
-  --anzhiyu-background: #18171d;
+  --anzhiyu-background: linear-gradient(to top, #002e5d, #002e5d, #2774ae);
   --anzhiyu-reverse: #fff;
   --anzhiyu-maskbg: rgba(0,0,0,0.6);
   --anzhiyu-maskbgdeep: rgba(0,0,0,0.85);
@@ -19732,6 +19732,9 @@ img {
   display: initial;
   vertical-align: middle;
 }
+
+
+
 #aside-content .card-widget#card-wechat {
   background: transparent;
   display: flex;
