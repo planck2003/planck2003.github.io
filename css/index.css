@@ -14282,6 +14282,7 @@ li.card-category-list-item {
   -webkit-box-shadow: var(--anzhiyu-shadow-border);
   box-shadow: var(--anzhiyu-shadow-border);
   background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px) !important;
   border: var(--style-border);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -19188,78 +19189,6 @@ html.hide-aside .layout > div:first-child {
     -webkit-backdrop-filter: blur(7px)!important;
   }
 
-  /* 由于全屏会出bug，所以直接给他隐藏 */
-
-.winbox {
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.wb-full {
-  display: none;
-}
-
-.wb-min {
-  background-position: center;
-}
-
-[data-theme='dark'] .wb-body,
-[data-theme='dark'] #changeBgBox {
-  background: #333 !important;
-}
-
-.bgbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.pimgbox,
-.imgbox,
-.box {
-  width: 166px;
-  margin: 10px;
-  background-size: cover
-}
-
-.pimgbox,
-.imgbox {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.pimgbox {
-  height: 240px;
-}
-
-.imgbox {
-  height: 95px;
-}
-
-.box {
-  height: 100px;
-}
-
-@media screen and (max-width: 768px) {
-  /* 背景 */
-  .pimgbox,
-  .imgbox,
-  .box {
-      height: 73px;
-      width: 135px;
-  }
-  .pimgbox {
-      height: 205px;
-  }
-  /* 2.0新增内容 */    
-  .wb-min {
-      display: none;
-  }
-  #changeBgBox .wb-body::-webkit-scrollbar {
-      display: none;
-  }
-}
-
 /* 右边栏设置齿轮转速 */
 i.fas.fa-solid.fa-gear {
   animation: fa-spin 5s linear infinite;
@@ -19268,7 +19197,7 @@ i.fas.fa-solid.fa-gear {
 @media screen and (min-width: 768px) {
   [data-theme=light] #recent-posts>.recent-post-item:not(a) {
       background:rgba(255, 255, 255, 0.88) !important;
-      filter: 10px !important;
+      backdrop-filter: blur(10px) !important;
   }
 
 }
@@ -19279,6 +19208,7 @@ i.fas.fa-solid.fa-gear {
 
 [data-theme=light] #category-bar {
   background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
 }
 [data-theme=dark] #category-bar  {
   background:rgba(25, 25, 25, 0.85) !important;
