@@ -18731,6 +18731,7 @@ svg.icon {
   background-color: transparent !important;
 } */
 
+
 /* 文章页面正文背景 */
 div#post {
   background: rgba(255, 255, 255, 0.9);
@@ -19266,7 +19267,8 @@ i.fas.fa-solid.fa-gear {
 
 @media screen and (min-width: 768px) {
   [data-theme=light] #recent-posts>.recent-post-item:not(a) {
-      background:rgba(255, 255, 255, 0.85) !important;
+      background:rgba(255, 255, 255, 0.88) !important;
+      filter: 10px !important;
   }
 
 }
@@ -19732,7 +19734,6 @@ img {
   display: initial;
   vertical-align: middle;
 }
-
 
 
 #aside-content .card-widget#card-wechat {
@@ -23502,7 +23503,8 @@ div#swiper_container:hover {
 .pl-container {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: fixed;
+    z-index: -2;
     overflow: hidden;
     will-change: transform; /* 添加性能优化 */
     animation: blur-to-clear 2.7s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
