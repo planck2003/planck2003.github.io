@@ -19832,6 +19832,10 @@ img {
 	height: 240px;
     vertical-align: middle
 }
+
+.pio-action {
+    display:none !important;
+}
 #aside-content .card-widget#card-wechat {
   background: transparent;
   display: flex;
