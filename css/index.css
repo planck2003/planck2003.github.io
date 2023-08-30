@@ -8992,9 +8992,9 @@ h1.page-title + .tag-cloud-list {
 }
 #footer {
   position: relative;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.8);
   color: #000;
-  backdrop-filter: saturate(100%) blur(5px);
+  backdrop-filter: saturate(100%) blur(10px);
   background-attachment: scroll;
   background-position: bottom;
   background-size: cover;
