@@ -19681,10 +19681,10 @@ img {
 
 .pio-container {
     bottom: 0;
-    z-index: 1;
+    z-index: 52;
     color: #666;
     position: fixed;
-    margin-left: 1640px;
+    margin-left: 1620px;
     user-select: none;
 }
 
@@ -19833,8 +19833,16 @@ img {
     vertical-align: middle
 }
 
-.pio-action {
-    display:none !important;
+.pio-action .pio-night {
+    display: none;
+}
+
+.pio-action .pio-skin {
+    display: none;
+}
+
+.pio-action .pio-info {
+    display: none;
 }
 #aside-content .card-widget#card-wechat {
   background: transparent;
