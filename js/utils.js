@@ -1404,8 +1404,8 @@ const executeLoad = (config, target) => {
 };
 
 const config = {
-  smallSrc: 'https://img01.anheyu.com/useruploads/243/2023/07/31/64c7d0b9d6e73.jpg', // 小图链接 尽可能配置小于100k的图片
-  largeSrc: 'https://img01.anheyu.com/useruploads/243/2023/08/18/64df1bd994e67.jpg', // 大图链接 最终显示的图片
+  smallSrc: 'https://img01.anheyu.com/useruploads/243/2023/08/18/64df5fbca3853.webp', // 小图链接 尽可能配置小于100k的图片
+  largeSrc: 'https://img01.anheyu.com/useruploads/243/2023/08/31/64f0625b2ec1e.webp', // 大图链接 最终显示的图片
   mobileSmallSrc: 'https://img01.anheyu.com/useruploads/243/2023/07/31/64c7d0b9d6e73.jpg', // 手机端小图链接 尽可能配置小于100k的图片
   mobileLargeSrc: 'https://t.mwm.moe/mp', // 手机端大图链接 最终显示的图片
   enableRoutes: ['/'],
