@@ -1332,9 +1332,16 @@ class ProgressiveLoad {
   constructor(smallSrc, largeSrc) {
     this.smallSrc = smallSrc;
     this.largeSrc = largeSrc;
+    this.initScrollListener(),
     this.initTpl();
   }
-
+  initScrollListener() {
+    window.addEventListener("scroll", (()=>{
+        var e = Math.min(window.scrollY / window.innerHeight, 1);
+        this.container.style.setProperty("--process", e)
+    }
+    ))
+  }
   /**
    * @description 生成ui模板
    */
@@ -1346,6 +1353,7 @@ class ProgressiveLoad {
     this.smallImg = new Image();
     this.largeImg = new Image();
     this.container.className = 'pl-container';
+    this.container.style.setProperty("--process", 0),
     this.smallStage.className = 'pl-img pl-blur';
     this.largeStage.className = 'pl-img';
     this.video.className = 'pl-video';

@@ -23608,6 +23608,26 @@ div#swiper_container:hover {
 }
 
 /* 首页头图加载 */
+#page-header {
+  -webkit-animation: .6s ease .3s 1 normal backwards running slide-in;
+  animation: .6s ease .3s 1 normal backwards running slide-in
+}
+
+@media screen and (max-width: 768px) {
+  .pl-container {
+      position:relative!important
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pl-container {
+      opacity:calc(1 - var(--process) * .95)!important;
+      transform: scale(calc(1 + var(--process) * .9));
+      filter: blur(calc(var(--process) * 50px));
+
+  }
+}
+
 .pl-container {
     width: 100%;
     height: 100%;
@@ -23617,6 +23637,7 @@ div#swiper_container:hover {
     will-change: transform; /* 添加性能优化 */
     animation: blur-to-clear 2.7s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
   }
+
   .pl-img {
     width: 100%;
     height: 100%;
@@ -23627,7 +23648,9 @@ div#swiper_container:hover {
     opacity: 0;
     transition: opacity 1.5s;
   }
-  
+  .pl-video.pl-visible {
+    display: block !important
+}
   @keyframes blur-to-clear {
     0% {
       filter: blur(50px);
