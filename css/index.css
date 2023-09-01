@@ -18728,9 +18728,9 @@ svg.icon {
 }
 
 /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
-/* #page-header:not(.not-top-img):before {
+#page-header:not(.not-top-img):before {
   background-color: transparent !important;
-} */
+}
 
 
 /* 文章页面正文背景 */
@@ -19557,7 +19557,7 @@ body[data-type=todolist] #page {
     color: #fff0;
     text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
   }
-  100% {
+  to {
     color: #fff;
     text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
   }

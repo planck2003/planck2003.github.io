@@ -1325,9 +1325,7 @@ const anzhiyu = {
 };
 
 // 首页头图加载优化
-/**
- * @description 实现medium的渐进加载背景的效果
- */
+
 class ProgressiveLoad {
   constructor(smallSrc, largeSrc) {
     this.smallSrc = smallSrc;
@@ -1364,25 +1362,14 @@ class ProgressiveLoad {
     this.largeImg.onload = this._onLargeLoaded.bind(this);
   }
 
-  /**
-   * @description 加载背景
-   */
   progressiveLoad() {
     this.smallImg.src = this.smallSrc;
     this.largeImg.src = this.largeSrc;
   }
-
-  /**
-   * @description 大图加载完成
-   */
   _onLargeLoaded() {
     this.largeStage.classList.add('pl-visible');
     this.largeStage.style.backgroundImage = `url('${this.largeSrc}')`;
   }
-
-  /**
-   * @description 小图加载完成
-   */
   _onSmallLoaded() {
     this.smallStage.classList.add('pl-visible');
     this.smallStage.style.backgroundImage = `url('${this.smallSrc}')`;
