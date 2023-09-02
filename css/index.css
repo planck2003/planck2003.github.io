@@ -19399,7 +19399,11 @@ body[data-type=todolist] #page {
 }
 
 #footer-wrap .footer-button > a:hover{
-  background:var(--ichika-color);
+  background:#fec4d9;
+  transition:0.2s;
+}
+[data-theme='dark'] #footer-wrap .footer-button > a:hover {
+  background:#00c4b6;
   transition:0.2s;
 }
 
@@ -19535,7 +19539,6 @@ body[data-type=todolist] #page {
   margin: 0 auto!important;
   position: relative;
   color: #fff0;
-  -webkit-animation: show 1.5s linear 1s 1 both !important;
   animation: show 1.5s linear 1s 1 both !important;
 }
 
@@ -19551,15 +19554,13 @@ body[data-type=todolist] #page {
 @keyframes show {
   0% {
     color: #fff0;
-    text-shadow: 2px 3px 10px transparent;
+    text-shadow: 2px 3px 10px 
   }
   81% {
-    color: #fff0;
-    text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
+    color: rgba(255, 255, 255, 0);
   }
   to {
-    color: #fff;
-    text-shadow: 2px 3px 10px rgba(46,46,46,.5333333333) translateZ(0);
+    color: rgb(255, 255, 255);
   }
 }
 
