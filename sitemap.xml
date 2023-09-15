@@ -325,6 +325,13 @@
   </url>
   
   <url>
+    <loc>https://www.yejinblok.cn/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yejinblok.cn/tags/hexo/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -333,13 +340,6 @@
   
   <url>
     <loc>https://www.yejinblok.cn/tags/live2d/</loc>
-    <lastmod>2023-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yejinblok.cn/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
