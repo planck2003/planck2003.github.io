@@ -23432,8 +23432,10 @@ div#swiper_container:hover {
 
 /* 首页头图加载 */
 #page-header {
-  -webkit-animation: .6s ease .3s 1 normal backwards running slide-in;
-  animation: .6s ease .3s 1 normal backwards running slide-in
+  /* -webkit-animation: .6s ease .3s 1 normal backwards running slide-in;
+  animation: .6s ease .3s 1 normal backwards running slide-in */
+  -webkit-animation: scale 2.2s cubic-bezier(.6,.1,.25,1) .5s 1 backwards;
+  animation: scale 2.2s cubic-bezier(.6,.1,.25,1) .5s 1 backwards
 }
 
 @media screen and (max-width: 768px) {
@@ -23458,7 +23460,7 @@ div#swiper_container:hover {
     z-index: -2;
     overflow: hidden;
     will-change: transform; /* 添加性能优化 */
-    animation: blur-to-clear 2.7s cubic-bezier(.62,.21,.25,1) 0s 1 normal backwards running, scale 1.5s cubic-bezier(.62,.21,.25,1) 0s 1 both;
+    animation: blur-to-clear 2.5s cubic-bezier(.6,.25,.25,1) 0s 1 backwards,scale 2.2s cubic-bezier(.6,.1,.25,1) .5s 1 backwards;
   }
 
   .pl-img {
@@ -23468,8 +23470,9 @@ div#swiper_container:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0;
-    transition: opacity 1.5s;
+    opacity: .1;
+    transition: opacity 1s;
+    will-change: transform,opacity
   }
   .pl-video.pl-visible {
     display: block !important
