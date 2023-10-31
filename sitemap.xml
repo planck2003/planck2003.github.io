@@ -340,6 +340,13 @@
   </url>
   
   <url>
+    <loc>https://www.yejinblok.cn/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yejinblok.cn/tags/%E6%B8%B8%E6%88%8F/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -354,20 +361,6 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/tags/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yejinblok.cn/tags/%E6%97%85%E8%A1%8C/</loc>
-    <lastmod>2023-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yejinblok.cn/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -375,7 +368,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://www.yejinblok.cn/tags/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -396,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://www.yejinblok.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -416,6 +409,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.yejinblok.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2023-10-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -426,14 +426,14 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/categories/%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C/</loc>
+    <loc>https://www.yejinblok.cn/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://www.yejinblok.cn/categories/%E6%B8%B8%E6%88%8F%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2023-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
