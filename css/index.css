@@ -18790,7 +18790,7 @@ div#category {
 }
 
 [data-theme="dark"] div#category {
-  background: transparent !important;
+  background: var(--anzhiyu-card-bg);
 }
 
 /* md网站下划线 */
@@ -26914,7 +26914,7 @@ div#runtime {
 }
 .search-dialog .search-nav {
   margin: 0 0 14px;
-  color: #fec4d9;
+  color: #00bfff;
   font-size: 1.4em;
   line-height: 1;
 }
@@ -26947,7 +26947,7 @@ div#runtime {
   padding: 5px 14px;
   width: 100%;
   outline: none;
-  border: 2px solid #fec4d9;
+  border: 2px solid #696969;
   border-radius: 40px;
   background: var(--search-bg);
   color: var(--search-input-color);
