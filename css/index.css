@@ -23440,14 +23440,14 @@ div#swiper_container:hover {
 
 @media screen and (max-width: 768px) {
   .pl-container {
-      position:relative!important
+      position:relative !important
   }
 }
 
 @media screen and (min-width: 768px) {
   .pl-container {
-      opacity:calc(1 - var(--process) * .95)!important;
-      transform: scale(calc(1 + var(--process) * .9));
+      opacity:calc(1 - var(--process) * .7)!important;
+      transform: scale(calc(1 + var(--process) * .2));
       filter: blur(calc(var(--process) * 50px));
 
   }
