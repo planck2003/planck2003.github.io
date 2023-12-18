@@ -1344,21 +1344,37 @@ class ProgressiveLoad {
    * @description 生成ui模板
    */
   initTpl() {
+    // 创建容器元素
     this.container = document.createElement('div');
+    // 创建小图标容器元素
     this.smallStage = document.createElement('div');
+    // 创建大图标容器元素
     this.largeStage = document.createElement('div');
+    // 创建视频容器元素
     this.video = document.createElement('div');
+    // 创建小图标图片元素
     this.smallImg = new Image();
+    // 创建大图标图片元素
     this.largeImg = new Image();
+    // 设置容器元素的类名
     this.container.className = 'pl-container';
+    // 设置容器元素的样式属性
     this.container.style.setProperty("--process", 0),
+    // 设置小图标容器的类名
     this.smallStage.className = 'pl-img pl-blur';
+    // 设置大图标容器的类名
     this.largeStage.className = 'pl-img';
+    // 设置视频容器的类名
     this.video.className = 'pl-video';
+    // 将小图标容器元素添加到容器元素中
     this.container.appendChild(this.smallStage);
+    // 将大图标容器元素添加到容器元素中
     this.container.appendChild(this.largeStage);
+    // 将视频容器元素添加到容器元素中
     this.container.appendChild(this.video);
+    // 为小图标图片元素添加onload事件
     this.smallImg.onload = this._onSmallLoaded.bind(this);
+    // 为大图标图片元素添加onload事件
     this.largeImg.onload = this._onLargeLoaded.bind(this);
   }
 

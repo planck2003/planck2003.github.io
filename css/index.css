@@ -19667,6 +19667,7 @@ img {
 }
 
 
+
 #aside-content .card-widget#card-wechat {
   background: transparent;
   display: flex;
@@ -23445,6 +23446,14 @@ div#swiper_container:hover {
 }
 
 @media screen and (min-width: 768px) {
+  #page-header.full_page,.pl-container {
+    height:100vh
+  }
+
+  #page-header.full_page.expand-to-full,.pl-container.expand-to-full {
+      height: 50vh!important
+  }
+
   .pl-container {
       opacity:calc(1 - var(--process) * .7)!important;
       transform: scale(calc(1 + var(--process) * .2));
@@ -23476,7 +23485,7 @@ div#swiper_container:hover {
   }
   .pl-video.pl-visible {
     display: block !important
-}
+  }
   @keyframes blur-to-clear {
     0% {
       filter: blur(50px);
