@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.yejinblok.cn/posts/f348e24b.html</loc>
     
-    <lastmod>2023-12-28</lastmod>
+    <lastmod>2023-12-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -398,6 +398,13 @@
   </url>
   
   <url>
+    <loc>https://www.yejinblok.cn/tags/live2d/</loc>
+    <lastmod>2023-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yejinblok.cn/tags/Tag-Plugins/</loc>
     <lastmod>2023-12-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -406,13 +413,6 @@
   
   <url>
     <loc>https://www.yejinblok.cn/tags/Hexo/</loc>
-    <lastmod>2023-12-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yejinblok.cn/tags/live2d/</loc>
     <lastmod>2023-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
