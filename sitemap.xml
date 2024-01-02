@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.yejinblok.cn/posts/5bb1b670.html</loc>
+    <loc>https://www.yejinblok.cn/posts/f348e24b.html</loc>
     
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2024-01-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/posts/f348e24b.html</loc>
+    <loc>https://www.yejinblok.cn/posts/5bb1b670.html</loc>
     
-    <lastmod>2023-12-30</lastmod>
+    <lastmod>2024-01-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -414,13 +414,6 @@
   </url>
   
   <url>
-    <loc>https://www.yejinblok.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yejinblok.cn/tags/Tag-Plugins/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -429,6 +422,13 @@
   
   <url>
     <loc>https://www.yejinblok.cn/tags/Hexo/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yejinblok.cn/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
