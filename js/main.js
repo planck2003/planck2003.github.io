@@ -929,7 +929,7 @@ document.addEventListener("DOMContentLoaded", function () {
         rightSideFn.hideAsideBtn();
         break;
       default:
-        break;
+        break;          
     }
   });
 

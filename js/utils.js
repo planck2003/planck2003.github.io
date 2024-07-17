@@ -627,7 +627,7 @@ const anzhiyu = {
       anzhiyu.musicBindEvent();
       anzhiyu_musicFirst = true;
     }
-    let msgPlay = '<i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span>';
+    let msgPlay = '<i class=" anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span>';
     let msgPause = '<i class="anzhiyufont anzhiyu-icon-pause"></i><span>暂停音乐</span>';
     if (anzhiyu_musicPlaying) {
       navMusicEl.classList.remove("playing");
@@ -643,7 +643,7 @@ const anzhiyu = {
       anzhiyu_musicPlaying = true;
       navMusicEl.classList.add("stretch");
     }
-    if (changePaly) document.querySelector("#nav-music meting-js").aplayer.toggle();
+    if (changePaly) document.querySelecdtor("#nav-music meting-js").aplayer.toggle();
     rm.hideRightMenu();
   },
   // 音乐伸缩
@@ -1188,7 +1188,7 @@ const anzhiyu = {
 
     localStorage.setItem("keyboardToggle", isKeyboardOn ? "false" : "true");
   },
-  rightMenuToggle: function () {
+  rightMenuToggle: function () { 
     if (window.oncontextmenu) {
       window.oncontextmenu = null;
     } else if (!window.oncontextmenu && oncontextmenuFunction) {
@@ -1354,7 +1354,7 @@ class ProgressiveLoad {
     this.video = document.createElement('div');
     // 创建小图标图片元素
     this.smallImg = new Image();
-    // 创建大图标图片元素
+    // 创建大图标图片元素   
     this.largeImg = new Image();
     // 设置容器元素的类名
     this.container.className = 'pl-container';
@@ -1437,3 +1437,5 @@ document.addEventListener("pjax:complete", function() {
 });
 
 
+
+ 
